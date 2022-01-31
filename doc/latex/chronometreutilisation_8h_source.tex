@@ -1,0 +1,40 @@
+\hypertarget{chronometreutilisation_8h_source}{}\subsection{chronometreutilisation.\+h}
+\label{chronometreutilisation_8h_source}\index{chronometreutilisation.\+h@{chronometreutilisation.\+h}}
+
+\begin{DoxyCode}
+00001 \textcolor{preprocessor}{#ifndef CHRONOMETREUTILISATION\_H}
+00002 \textcolor{preprocessor}{#define CHRONOMETREUTILISATION\_H}
+00003 
+00004 \textcolor{preprocessor}{#include <QObject>}
+00005 \textcolor{preprocessor}{#include <QTimer>}
+00006 \textcolor{comment}{// en ms}
+\Hypertarget{chronometreutilisation_8h_source_l00007}\hyperlink{chronometreutilisation_8h_ad0750d12e2f5f404ec458d4066a53fa4}{00007} \textcolor{preprocessor}{#define PERIODE 100}
+00008 
+\Hypertarget{chronometreutilisation_8h_source_l00033}\hyperlink{class_chronometre_utilisation}{00033} \textcolor{keyword}{class }\hyperlink{class_chronometre_utilisation}{ChronometreUtilisation} : \textcolor{keyword}{public} QObject
+00034 \{
+00035     Q\_OBJECT
+00036 \textcolor{keyword}{public}:
+00037     \textcolor{keyword}{explicit} \hyperlink{class_chronometre_utilisation_a499bd70e5056ddb71df022848d1e345e}{ChronometreUtilisation}(QObject *parent = \textcolor{keyword}{nullptr});  
+00038     \textcolor{keywordtype}{long} \hyperlink{class_chronometre_utilisation_a2c137076fcda83a14a5bad01b915196f}{getMinute}();  
+00039     \textcolor{keywordtype}{long} \hyperlink{class_chronometre_utilisation_a03c732560e07a2014129a7da8bb2307b}{getHeure}();
+00040     \textcolor{keywordtype}{long} \hyperlink{class_chronometre_utilisation_a62dde8f710b8e015ba6124e8b44fe2da}{getSeconde}(); 
+00041 
+00042 \textcolor{keyword}{private}:
+\Hypertarget{chronometreutilisation_8h_source_l00043}\hyperlink{class_chronometre_utilisation_ae86620ca7d91c0d06c2e695493638bf2}{00043}     QTimer    *\hyperlink{class_chronometre_utilisation_ae86620ca7d91c0d06c2e695493638bf2}{m\_timer}; 
+\Hypertarget{chronometreutilisation_8h_source_l00044}\hyperlink{class_chronometre_utilisation_a7ef8b30ae4b6db56b9be832c847186ea}{00044}     \textcolor{keywordtype}{long}      \hyperlink{class_chronometre_utilisation_a7ef8b30ae4b6db56b9be832c847186ea}{m\_valeur}; 
+00045     \textcolor{keywordtype}{void} \hyperlink{class_chronometre_utilisation_add760c3052342baec482fe0752a89b86}{update}(); 
+00046 
+00047 signals:
+00048     \textcolor{keywordtype}{void} \hyperlink{class_chronometre_utilisation_ae4e197f888e33feb23801d2edcf2c4a5}{chronoUpdated}(QString); 
+00049 
+00050 \textcolor{keyword}{public} slots:
+00051     \textcolor{keywordtype}{void}  \hyperlink{class_chronometre_utilisation_ac3f2fb837e9ba408d4dcaf488b289c64}{demarrer}(\textcolor{keywordtype}{int} top=\hyperlink{chronometreutilisation_8h_ad0750d12e2f5f404ec458d4066a53fa4}{PERIODE}); 
+00052     \textcolor{keywordtype}{void}  \hyperlink{class_chronometre_utilisation_a938c4c86a6b33eaf60af7be81ee7ec32}{arreter}(); 
+00053 
+00054 \textcolor{keyword}{private} slots:
+00055     \textcolor{keywordtype}{void}  \hyperlink{class_chronometre_utilisation_ab8dc7eb855ec9e24daefa4e185051d2e}{tic}(); 
+00056 \};
+00057 
+00058 
+00059 \textcolor{preprocessor}{#endif // CHRONOMETREUTILISATION\_H}
+\end{DoxyCode}

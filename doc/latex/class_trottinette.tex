@@ -1,0 +1,169 @@
+\hypertarget{class_trottinette}{}\subsection{Référence de la classe Trottinette}
+\label{class_trottinette}\index{Trottinette@{Trottinette}}
+
+
+Déclaration de la classe \hyperlink{class_trottinette}{Trottinette}.  
+
+
+
+
+{\ttfamily \#include $<$trottinette.\+h$>$}
+
+
+
+Graphe de collaboration de Trottinette\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=184pt]{class_trottinette__coll__graph}
+\end{center}
+\end{figure}
+\subsubsection*{Signaux}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_trottinette_a44ae1514740ee0a1a55a9dab39c37aaf}{peripherique\+Changed} ()
+\begin{DoxyCompactList}\small\item\em les attributs du périphériques ont changé \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_trottinette_ab3c84f129214e5dcf8f9d11cf7f3e3e0}{Trottinette} (Q\+String \hyperlink{class_trottinette_aab7d536bd21b3dbf0b9cca5508db40ab}{nom}, Q\+String \hyperlink{class_trottinette_acd01acc5c1cbf23b9b527401282f1136}{adresse\+M\+AC}, Q\+Object $\ast$parent=nullptr)
+\begin{DoxyCompactList}\small\item\em Constructeur de la classe \hyperlink{class_trottinette}{Trottinette}. \end{DoxyCompactList}\item 
+Q\+String \hyperlink{class_trottinette_a9b191a43bacb534dca0727aedd3076cd}{get\+Nom} ()
+\begin{DoxyCompactList}\small\item\em Retourne le nom de la trottinette. \end{DoxyCompactList}\item 
+Q\+String \hyperlink{class_trottinette_a4d319bfda23b3d871b62e3e910cc204d}{get\+Adresse\+M\+AC} ()
+\begin{DoxyCompactList}\small\item\em Retourne l\textquotesingle{}adresse M\+AC de la trottinette. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsubsection*{Propriétés}
+\begin{DoxyCompactItemize}
+\item 
+Q\+String \hyperlink{class_trottinette_aab7d536bd21b3dbf0b9cca5508db40ab}{nom}
+\begin{DoxyCompactList}\small\item\em nom du périphérique Bluetooth \end{DoxyCompactList}\item 
+Q\+String \hyperlink{class_trottinette_acd01acc5c1cbf23b9b527401282f1136}{adresse\+M\+AC}
+\begin{DoxyCompactList}\small\item\em adresse M\+AC du périphérique Bluetooth \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsubsection{Description détaillée}
+\begin{DoxyAuthor}{Auteur}
+Somphon Sy
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+1 
+\end{DoxyVersion}
+
+
+\subsubsection{Documentation des constructeurs et destructeur}
+\mbox{\Hypertarget{class_trottinette_ab3c84f129214e5dcf8f9d11cf7f3e3e0}\label{class_trottinette_ab3c84f129214e5dcf8f9d11cf7f3e3e0}} 
+\index{Trottinette@{Trottinette}!Trottinette@{Trottinette}}
+\index{Trottinette@{Trottinette}!Trottinette@{Trottinette}}
+\paragraph{\texorpdfstring{Trottinette()}{Trottinette()}}
+{\footnotesize\ttfamily Trottinette\+::\+Trottinette (\begin{DoxyParamCaption}\item[{Q\+String}]{nom,  }\item[{Q\+String}]{adresse\+M\+AC,  }\item[{Q\+Object $\ast$}]{parent = {\ttfamily nullptr} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+\begin{DoxyParams}{Paramètres}
+{\em nom} & Q\+String nom \\
+\hline
+{\em adresse\+M\+AC} & Q\+String Adresse M\+AC \\
+\hline
+{\em parent} & Q\+Object Adresse de l\textquotesingle{}objet Qt parent \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+00025                                                                           : QObject(parent) , 
+      \hyperlink{class_trottinette_aab7d536bd21b3dbf0b9cca5508db40ab}{nom}(\hyperlink{class_trottinette_aab7d536bd21b3dbf0b9cca5508db40ab}{nom}) , \hyperlink{class_trottinette_acd01acc5c1cbf23b9b527401282f1136}{adresseMAC}(\hyperlink{class_trottinette_acd01acc5c1cbf23b9b527401282f1136}{adresseMAC})
+00026 \{
+00027 
+00028 \}
+\end{DoxyCode}
+
+
+\subsubsection{Documentation des fonctions membres}
+\mbox{\Hypertarget{class_trottinette_a4d319bfda23b3d871b62e3e910cc204d}\label{class_trottinette_a4d319bfda23b3d871b62e3e910cc204d}} 
+\index{Trottinette@{Trottinette}!get\+Adresse\+M\+AC@{get\+Adresse\+M\+AC}}
+\index{get\+Adresse\+M\+AC@{get\+Adresse\+M\+AC}!Trottinette@{Trottinette}}
+\paragraph{\texorpdfstring{get\+Adresse\+M\+A\+C()}{getAdresseMAC()}}
+{\footnotesize\ttfamily Q\+String Trottinette\+::get\+Adresse\+M\+AC (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Accesseur de l\textquotesingle{}attribut adresse\+M\+AC.
+
+\begin{DoxyReturn}{Renvoie}
+Q\+String adresse M\+AC du périphérique Bluetooth 
+\end{DoxyReturn}
+
+
+Références \hyperlink{class_trottinette_acd01acc5c1cbf23b9b527401282f1136}{adresse\+M\+AC}.
+
+
+
+Référencé par \hyperlink{class_peripherique_local_a465658a204541e309f2647d473f658d8}{Peripherique\+Local\+::get\+Trottinette\+Adresse\+Mac()}.
+
+
+\begin{DoxyCode}
+00050 \{
+00051     \textcolor{keywordflow}{return} \hyperlink{class_trottinette_acd01acc5c1cbf23b9b527401282f1136}{adresseMAC};
+00052 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_trottinette_a9b191a43bacb534dca0727aedd3076cd}\label{class_trottinette_a9b191a43bacb534dca0727aedd3076cd}} 
+\index{Trottinette@{Trottinette}!get\+Nom@{get\+Nom}}
+\index{get\+Nom@{get\+Nom}!Trottinette@{Trottinette}}
+\paragraph{\texorpdfstring{get\+Nom()}{getNom()}}
+{\footnotesize\ttfamily Q\+String Trottinette\+::get\+Nom (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Accesseur de l\textquotesingle{}attribut nom.
+
+Accesseur de l\textquotesingle{}attribut M\+AC.
+
+\begin{DoxyReturn}{Renvoie}
+Q\+String M\+AC du périphérique local
+
+Q\+String nom du périphérique Bluetooth 
+\end{DoxyReturn}
+
+
+Références \hyperlink{class_trottinette_aab7d536bd21b3dbf0b9cca5508db40ab}{nom}.
+
+
+
+Référencé par \hyperlink{class_peripherique_local_ac81a942b4d1d9e848649073c53ed6917}{Peripherique\+Local\+::get\+Trottinette\+Nom()}.
+
+
+\begin{DoxyCode}
+00038 \{
+00039     \textcolor{keywordflow}{return} \hyperlink{class_trottinette_aab7d536bd21b3dbf0b9cca5508db40ab}{nom};
+00040 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_trottinette_a44ae1514740ee0a1a55a9dab39c37aaf}\label{class_trottinette_a44ae1514740ee0a1a55a9dab39c37aaf}} 
+\index{Trottinette@{Trottinette}!peripherique\+Changed@{peripherique\+Changed}}
+\index{peripherique\+Changed@{peripherique\+Changed}!Trottinette@{Trottinette}}
+\paragraph{\texorpdfstring{peripherique\+Changed}{peripheriqueChanged}}
+{\footnotesize\ttfamily void Trottinette\+::peripherique\+Changed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+
+
+\subsubsection{Documentation des propriétés}
+\mbox{\Hypertarget{class_trottinette_acd01acc5c1cbf23b9b527401282f1136}\label{class_trottinette_acd01acc5c1cbf23b9b527401282f1136}} 
+\index{Trottinette@{Trottinette}!adresse\+M\+AC@{adresse\+M\+AC}}
+\index{adresse\+M\+AC@{adresse\+M\+AC}!Trottinette@{Trottinette}}
+\paragraph{\texorpdfstring{adresse\+M\+AC}{adresseMAC}}
+{\footnotesize\ttfamily Q\+String Trottinette\+::adresse\+M\+AC\hspace{0.3cm}{\ttfamily [read]}}
+
+
+
+Référencé par \hyperlink{class_trottinette_a4d319bfda23b3d871b62e3e910cc204d}{get\+Adresse\+M\+A\+C()}.
+
+\mbox{\Hypertarget{class_trottinette_aab7d536bd21b3dbf0b9cca5508db40ab}\label{class_trottinette_aab7d536bd21b3dbf0b9cca5508db40ab}} 
+\index{Trottinette@{Trottinette}!nom@{nom}}
+\index{nom@{nom}!Trottinette@{Trottinette}}
+\paragraph{\texorpdfstring{nom}{nom}}
+{\footnotesize\ttfamily Q\+String Trottinette\+::nom\hspace{0.3cm}{\ttfamily [read]}}
+
+
+
+Référencé par \hyperlink{class_trottinette_a9b191a43bacb534dca0727aedd3076cd}{get\+Nom()}.
+
+
+
+La documentation de cette classe a été générée à partir des fichiers suivants \+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{trottinette_8h}{trottinette.\+h}\item 
+\hyperlink{peripheriquelocal_8cpp}{peripheriquelocal.\+cpp}\item 
+\hyperlink{trottinette_8cpp}{trottinette.\+cpp}\end{DoxyCompactItemize}

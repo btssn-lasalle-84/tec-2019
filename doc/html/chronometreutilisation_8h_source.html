@@ -1,0 +1,93 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Trottinette Électrique Connectée:  Fichier source de chronometreutilisation.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="icone-tec.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Trottinette Électrique Connectée
+   &#160;<span id="projectnumber">1.1</span>
+   </div>
+   <div id="projectbrief">BTS SN-IR 2019</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_fc09f153426f9bdba3d78620572c2fac.html">ihmTec</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">chronometreutilisation.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="chronometreutilisation_8h.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef CHRONOMETREUTILISATION_H</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define CHRONOMETREUTILISATION_H</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;QObject&gt;</span></div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;QTimer&gt;</span></div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment">// en ms</span></div><div class="line"><a name="l00007"></a><span class="lineno"><a class="line" href="chronometreutilisation_8h.html#ad0750d12e2f5f404ec458d4066a53fa4">    7</a></span>&#160;<span class="preprocessor">#define PERIODE 100</span></div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div><div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="class_chronometre_utilisation.html">   33</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_chronometre_utilisation.html">ChronometreUtilisation</a> : <span class="keyword">public</span> QObject</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;{</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    Q_OBJECT</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="keyword">public</span>:</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="class_chronometre_utilisation.html#a499bd70e5056ddb71df022848d1e345e">ChronometreUtilisation</a>(QObject *parent = <span class="keyword">nullptr</span>);  </div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keywordtype">long</span> <a class="code" href="class_chronometre_utilisation.html#a2c137076fcda83a14a5bad01b915196f">getMinute</a>();  </div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keywordtype">long</span> <a class="code" href="class_chronometre_utilisation.html#a03c732560e07a2014129a7da8bb2307b">getHeure</a>();</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keywordtype">long</span> <a class="code" href="class_chronometre_utilisation.html#a62dde8f710b8e015ba6124e8b44fe2da">getSeconde</a>(); </div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="keyword">private</span>:</div><div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="class_chronometre_utilisation.html#ae86620ca7d91c0d06c2e695493638bf2">   43</a></span>&#160;    QTimer    *<a class="code" href="class_chronometre_utilisation.html#ae86620ca7d91c0d06c2e695493638bf2">m_timer</a>; </div><div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="class_chronometre_utilisation.html#a7ef8b30ae4b6db56b9be832c847186ea">   44</a></span>&#160;    <span class="keywordtype">long</span>      <a class="code" href="class_chronometre_utilisation.html#a7ef8b30ae4b6db56b9be832c847186ea">m_valeur</a>; </div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_chronometre_utilisation.html#add760c3052342baec482fe0752a89b86">update</a>(); </div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;signals:</div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_chronometre_utilisation.html#ae4e197f888e33feb23801d2edcf2c4a5">chronoUpdated</a>(QString); </div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="keyword">public</span> slots:</div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keywordtype">void</span>  <a class="code" href="class_chronometre_utilisation.html#ac3f2fb837e9ba408d4dcaf488b289c64">demarrer</a>(<span class="keywordtype">int</span> top=<a class="code" href="chronometreutilisation_8h.html#ad0750d12e2f5f404ec458d4066a53fa4">PERIODE</a>); </div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keywordtype">void</span>  <a class="code" href="class_chronometre_utilisation.html#a938c4c86a6b33eaf60af7be81ee7ec32">arreter</a>(); </div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="keyword">private</span> slots:</div><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keywordtype">void</span>  <a class="code" href="class_chronometre_utilisation.html#ab8dc7eb855ec9e24daefa4e185051d2e">tic</a>(); </div><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;};</div><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="preprocessor">#endif // CHRONOMETREUTILISATION_H</span></div><div class="ttc" id="class_chronometre_utilisation_html_add760c3052342baec482fe0752a89b86"><div class="ttname"><a href="class_chronometre_utilisation.html#add760c3052342baec482fe0752a89b86">ChronometreUtilisation::update</a></div><div class="ttdeci">void update()</div><div class="ttdoc">Met à jour la variable contenant l&amp;#39;heure. </div><div class="ttdef"><b>Definition:</b> chronometreutilisation.cpp:87</div></div>
+<div class="ttc" id="chronometreutilisation_8h_html_ad0750d12e2f5f404ec458d4066a53fa4"><div class="ttname"><a href="chronometreutilisation_8h.html#ad0750d12e2f5f404ec458d4066a53fa4">PERIODE</a></div><div class="ttdeci">#define PERIODE</div><div class="ttdef"><b>Definition:</b> chronometreutilisation.h:7</div></div>
+<div class="ttc" id="class_chronometre_utilisation_html_ae86620ca7d91c0d06c2e695493638bf2"><div class="ttname"><a href="class_chronometre_utilisation.html#ae86620ca7d91c0d06c2e695493638bf2">ChronometreUtilisation::m_timer</a></div><div class="ttdeci">QTimer * m_timer</div><div class="ttdoc">Pointeur sur une classe QTimer. </div><div class="ttdef"><b>Definition:</b> chronometreutilisation.h:43</div></div>
+<div class="ttc" id="class_chronometre_utilisation_html_a03c732560e07a2014129a7da8bb2307b"><div class="ttname"><a href="class_chronometre_utilisation.html#a03c732560e07a2014129a7da8bb2307b">ChronometreUtilisation::getHeure</a></div><div class="ttdeci">long getHeure()</div><div class="ttdoc">Retourne l&amp;#39;heure du chrono. </div><div class="ttdef"><b>Definition:</b> chronometreutilisation.cpp:57</div></div>
+<div class="ttc" id="class_chronometre_utilisation_html_ab8dc7eb855ec9e24daefa4e185051d2e"><div class="ttname"><a href="class_chronometre_utilisation.html#ab8dc7eb855ec9e24daefa4e185051d2e">ChronometreUtilisation::tic</a></div><div class="ttdeci">void tic()</div><div class="ttdoc">Slot qui incrémente le timer du chrono. </div><div class="ttdef"><b>Definition:</b> chronometreutilisation.cpp:114</div></div>
+<div class="ttc" id="class_chronometre_utilisation_html_a2c137076fcda83a14a5bad01b915196f"><div class="ttname"><a href="class_chronometre_utilisation.html#a2c137076fcda83a14a5bad01b915196f">ChronometreUtilisation::getMinute</a></div><div class="ttdeci">long getMinute()</div><div class="ttdoc">Retourne les minutes du chrono. </div><div class="ttdef"><b>Definition:</b> chronometreutilisation.cpp:44</div></div>
+<div class="ttc" id="class_chronometre_utilisation_html_a7ef8b30ae4b6db56b9be832c847186ea"><div class="ttname"><a href="class_chronometre_utilisation.html#a7ef8b30ae4b6db56b9be832c847186ea">ChronometreUtilisation::m_valeur</a></div><div class="ttdeci">long m_valeur</div><div class="ttdoc">Compteur de l&amp;#39;horloge. </div><div class="ttdef"><b>Definition:</b> chronometreutilisation.h:44</div></div>
+<div class="ttc" id="class_chronometre_utilisation_html_a938c4c86a6b33eaf60af7be81ee7ec32"><div class="ttname"><a href="class_chronometre_utilisation.html#a938c4c86a6b33eaf60af7be81ee7ec32">ChronometreUtilisation::arreter</a></div><div class="ttdeci">void arreter()</div><div class="ttdoc">Slot arrêtant le timer du chrono. </div><div class="ttdef"><b>Definition:</b> chronometreutilisation.cpp:138</div></div>
+<div class="ttc" id="class_chronometre_utilisation_html_a62dde8f710b8e015ba6124e8b44fe2da"><div class="ttname"><a href="class_chronometre_utilisation.html#a62dde8f710b8e015ba6124e8b44fe2da">ChronometreUtilisation::getSeconde</a></div><div class="ttdeci">long getSeconde()</div><div class="ttdoc">Retourne les secondes du chrono. </div><div class="ttdef"><b>Definition:</b> chronometreutilisation.cpp:76</div></div>
+<div class="ttc" id="class_chronometre_utilisation_html_a499bd70e5056ddb71df022848d1e345e"><div class="ttname"><a href="class_chronometre_utilisation.html#a499bd70e5056ddb71df022848d1e345e">ChronometreUtilisation::ChronometreUtilisation</a></div><div class="ttdeci">ChronometreUtilisation(QObject *parent=nullptr)</div><div class="ttdoc">Constructeur de la classe ChronometreUtilisation. </div><div class="ttdef"><b>Definition:</b> chronometreutilisation.cpp:24</div></div>
+<div class="ttc" id="class_chronometre_utilisation_html"><div class="ttname"><a href="class_chronometre_utilisation.html">ChronometreUtilisation</a></div><div class="ttdoc">Déclaration de la classe ChronometreUtilisation. </div><div class="ttdef"><b>Definition:</b> chronometreutilisation.h:33</div></div>
+<div class="ttc" id="class_chronometre_utilisation_html_ac3f2fb837e9ba408d4dcaf488b289c64"><div class="ttname"><a href="class_chronometre_utilisation.html#ac3f2fb837e9ba408d4dcaf488b289c64">ChronometreUtilisation::demarrer</a></div><div class="ttdeci">void demarrer(int top=PERIODE)</div><div class="ttdoc">Slot lançant le timer du chrono. </div><div class="ttdef"><b>Definition:</b> chronometreutilisation.cpp:127</div></div>
+<div class="ttc" id="class_chronometre_utilisation_html_ae4e197f888e33feb23801d2edcf2c4a5"><div class="ttname"><a href="class_chronometre_utilisation.html#ae4e197f888e33feb23801d2edcf2c4a5">ChronometreUtilisation::chronoUpdated</a></div><div class="ttdeci">void chronoUpdated(QString)</div><div class="ttdoc">Signal contenant la variable contenant l&amp;#39;heure. </div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré le Jeudi 13 Juin 2019 19:46:35 pour Trottinette Électrique Connectée par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

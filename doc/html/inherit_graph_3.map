@@ -1,0 +1,4 @@
+<map id="Graphe hiérarchique des classes" name="Graphe hiérarchique des classes">
+<area shape="rect" id="node2" href="$class_page_accueil.html" title="La page d&#39;accueil de l&#39;application. " alt="" coords="105,5,200,32"/>
+<area shape="rect" id="node3" href="$class_page_carte.html" title="La page de navigation (Carte et/ou Télémétrie) " alt="" coords="111,56,195,83"/>
+</map>

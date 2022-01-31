@@ -1,0 +1,6 @@
+<map id="main" name="main">
+<area shape="rect" id="node2" href="$class_application_window.html" title="La fenêtre principale de l&#39;application terminal mobile. " alt="" coords="5,161,139,239"/>
+<area shape="rect" id="node3" href="$class_page_carte.html" title="{PageCarte\n|&#45; affichageCarte\l&#45; mapPlugin\l&#45; map\l|}" alt="" coords="163,147,277,253"/>
+<area shape="rect" id="node4" href="$class_page.html" title="La page d&#39;accueil de l&#39;application. " alt="" coords="285,5,337,83"/>
+<area shape="rect" id="node5" href="$class_page_accueil.html" title="{PageAccueil\n|&#45; visible\l&#45; popup\l&#45; indicateurRechercheBluetooth\l&#45; boutonRecherche\l&#45; boutonConnexion\l|}" alt="" coords="302,132,506,268"/>
+</map>

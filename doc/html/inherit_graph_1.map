@@ -1,0 +1,6 @@
+<map id="Graphe hiérarchique des classes" name="Graphe hiérarchique des classes">
+<area shape="rect" id="node1" href="$class_chronometre_utilisation.html" title="Déclaration de la classe ChronometreUtilisation. " alt="" coords="5,56,160,83"/>
+<area shape="rect" id="node2" href="$class_peripherique_local.html" title="Déclaration de la classe PeripheriqueLocal. " alt="" coords="208,5,333,32"/>
+<area shape="rect" id="node3" href="$class_trame.html" title="Déclaration de la classe Trame. " alt="" coords="241,56,300,83"/>
+<area shape="rect" id="node4" href="$class_trottinette.html" title="Déclaration de la classe Trottinette. " alt="" coords="230,107,311,133"/>
+</map>

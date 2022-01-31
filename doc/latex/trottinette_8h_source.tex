@@ -1,0 +1,33 @@
+\hypertarget{trottinette_8h_source}{}\subsection{trottinette.\+h}
+\label{trottinette_8h_source}\index{trottinette.\+h@{trottinette.\+h}}
+
+\begin{DoxyCode}
+00001 \textcolor{preprocessor}{#ifndef TROTTINETTE\_H}
+00002 \textcolor{preprocessor}{#define TROTTINETTE\_H}
+00003 
+00004 \textcolor{preprocessor}{#include <QObject>}
+00005 
+\Hypertarget{trottinette_8h_source_l00030}\hyperlink{class_trottinette}{00030} \textcolor{keyword}{class }\hyperlink{class_trottinette}{Trottinette} : \textcolor{keyword}{public} QObject
+00031 \{
+00032     Q\_OBJECT
+\Hypertarget{trottinette_8h_source_l00033}\hyperlink{class_trottinette_aab7d536bd21b3dbf0b9cca5508db40ab}{00033}     Q\_PROPERTY(QString nom READ getNom NOTIFY peripheriqueChanged)
+\Hypertarget{trottinette_8h_source_l00034}\hyperlink{class_trottinette_acd01acc5c1cbf23b9b527401282f1136}{00034}     Q\_PROPERTY(QString adresseMAC READ getAdresseMAC NOTIFY peripheriqueChanged)
+00035 
+00036 public:
+00037     explicit \hyperlink{class_trottinette}{Trottinette}(QString nom , QString adresseMAC ,QObject *parent = \textcolor{keywordtype}{nullptr}); 
+00038     QString getNom(); 
+00039     QString getAdresseMAC();  
+00040 
+00041 private:
+00042     QString nom; 
+00043     QString adresseMAC; 
+00044 
+00045 
+00046 public slots:
+00047 
+00048 signals:
+00049     \textcolor{keywordtype}{void} peripheriqueChanged(); 
+00050 \};
+00051 
+00052 \textcolor{preprocessor}{#endif // TROTTINETTE\_H}
+\end{DoxyCode}

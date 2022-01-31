@@ -1,0 +1,139 @@
+\hypertarget{class_trame}{}\subsection{Référence de la classe Trame}
+\label{class_trame}\index{Trame@{Trame}}
+
+
+Déclaration de la classe \hyperlink{class_trame}{Trame}.  
+
+
+
+
+{\ttfamily \#include $<$trame.\+h$>$}
+
+
+
+Graphe de collaboration de Trame\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=164pt]{class_trame__coll__graph}
+\end{center}
+\end{figure}
+\subsubsection*{Connecteurs publics}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_trame_af6397dc6452101d13d8cccd53205a937}{traiter\+Trame} (Q\+String)
+\begin{DoxyCompactList}\small\item\em Slot qui vas traiter la trame. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsubsection*{Signaux}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_trame_ae7f5191744273a6bb4347aa477bdfaff}{donnees\+Trottinette} (Q\+String, Q\+String, Q\+String, Q\+String)
+\begin{DoxyCompactList}\small\item\em Signal émettant les données de fonctionnement de la trottinette. \end{DoxyCompactList}\item 
+void \hyperlink{class_trame_a8286aea8fb78e2e148f3f0dc35e8b079}{risque\+De\+Chute} (Q\+String)
+\end{DoxyCompactItemize}
+\subsubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_trame_ae40bffc8a1e3f6ad9dec4710b673a57a}{Trame} (Q\+Object $\ast$parent=nullptr)
+\begin{DoxyCompactList}\small\item\em Constructeur de la classe \hyperlink{class_trame}{Trame}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsubsection{Description détaillée}
+\begin{DoxyAuthor}{Auteur}
+Somphon Sy
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+1 
+\end{DoxyVersion}
+
+
+\subsubsection{Documentation des constructeurs et destructeur}
+\mbox{\Hypertarget{class_trame_ae40bffc8a1e3f6ad9dec4710b673a57a}\label{class_trame_ae40bffc8a1e3f6ad9dec4710b673a57a}} 
+\index{Trame@{Trame}!Trame@{Trame}}
+\index{Trame@{Trame}!Trame@{Trame}}
+\paragraph{\texorpdfstring{Trame()}{Trame()}}
+{\footnotesize\ttfamily Trame\+::\+Trame (\begin{DoxyParamCaption}\item[{Q\+Object $\ast$}]{parent = {\ttfamily nullptr} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+\begin{DoxyParams}{Paramètres}
+{\em parent} & Q\+Object Adresse de l\textquotesingle{}objet Qt parent \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+00025                             : QObject(parent)
+00026 \{
+00027 
+00028 \}
+\end{DoxyCode}
+
+
+\subsubsection{Documentation des fonctions membres}
+\mbox{\Hypertarget{class_trame_ae7f5191744273a6bb4347aa477bdfaff}\label{class_trame_ae7f5191744273a6bb4347aa477bdfaff}} 
+\index{Trame@{Trame}!donnees\+Trottinette@{donnees\+Trottinette}}
+\index{donnees\+Trottinette@{donnees\+Trottinette}!Trame@{Trame}}
+\paragraph{\texorpdfstring{donnees\+Trottinette}{donneesTrottinette}}
+{\footnotesize\ttfamily void Trame\+::donnees\+Trottinette (\begin{DoxyParamCaption}\item[{Q\+String}]{,  }\item[{Q\+String}]{,  }\item[{Q\+String}]{,  }\item[{Q\+String}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+
+
+Référencé par \hyperlink{class_trame_af6397dc6452101d13d8cccd53205a937}{traiter\+Trame()}.
+
+\mbox{\Hypertarget{class_trame_a8286aea8fb78e2e148f3f0dc35e8b079}\label{class_trame_a8286aea8fb78e2e148f3f0dc35e8b079}} 
+\index{Trame@{Trame}!risque\+De\+Chute@{risque\+De\+Chute}}
+\index{risque\+De\+Chute@{risque\+De\+Chute}!Trame@{Trame}}
+\paragraph{\texorpdfstring{risque\+De\+Chute}{risqueDeChute}}
+{\footnotesize\ttfamily void Trame\+::risque\+De\+Chute (\begin{DoxyParamCaption}\item[{Q\+String}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+
+
+Référencé par \hyperlink{class_trame_af6397dc6452101d13d8cccd53205a937}{traiter\+Trame()}.
+
+\mbox{\Hypertarget{class_trame_af6397dc6452101d13d8cccd53205a937}\label{class_trame_af6397dc6452101d13d8cccd53205a937}} 
+\index{Trame@{Trame}!traiter\+Trame@{traiter\+Trame}}
+\index{traiter\+Trame@{traiter\+Trame}!Trame@{Trame}}
+\paragraph{\texorpdfstring{traiter\+Trame}{traiterTrame}}
+{\footnotesize\ttfamily void Trame\+::traiter\+Trame (\begin{DoxyParamCaption}\item[{Q\+String}]{trame }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+Slot qui vas traiter la trame vas emettre le signal contenant les données de fonctionnement de la trottinette.
+
+
+\begin{DoxyParams}{Paramètres}
+{\em trame} & Q\+String trame émise par la trottinette \\
+\hline
+\end{DoxyParams}
+
+
+Références \hyperlink{class_trame_ae7f5191744273a6bb4347aa477bdfaff}{donnees\+Trottinette()}, et \hyperlink{class_trame_a8286aea8fb78e2e148f3f0dc35e8b079}{risque\+De\+Chute()}.
+
+
+\begin{DoxyCode}
+00039 \{
+00040     QString vitesse;
+00041     QString inclinaison;
+00042     QString batterie;
+00043     QString distanceParcourue ;
+00044     QString indicateurRisqueDeChute;
+00045     qDebug() << Q\_FUNC\_INFO << trame;
+00046     \textcolor{keywordflow}{if}(trame.startsWith(\textcolor{stringliteral}{"TEC"}))
+00047     \{
+00048         inclinaison = trame.section(\textcolor{charliteral}{';'},1,1);
+00049         batterie = trame.section(\textcolor{charliteral}{';'},2,2);
+00050         vitesse = trame.section(\textcolor{charliteral}{';'},3,3);
+00051         distanceParcourue = trame.section(\textcolor{charliteral}{';'},4,4);
+00052         indicateurRisqueDeChute=trame.section(\textcolor{stringliteral}{";"},5,5);
+00053 
+00054         qDebug()<< \textcolor{stringliteral}{"La vitesse est de : "} << vitesse << \textcolor{stringliteral}{"L'inclinaison est de : "} << inclinaison;
+00055         qDebug()<< \textcolor{stringliteral}{"La batterie est de : "} << batterie << \textcolor{stringliteral}{"La distance parcourue est de : "} << 
+      distanceParcourue;
+00056         qDebug()<< \textcolor{stringliteral}{"Risque de chute: "} << indicateurRisqueDeChute ;
+00057         emit \hyperlink{class_trame_ae7f5191744273a6bb4347aa477bdfaff}{donneesTrottinette}(vitesse , inclinaison,batterie , distanceParcourue);
+00058         emit \hyperlink{class_trame_a8286aea8fb78e2e148f3f0dc35e8b079}{risqueDeChute}(indicateurRisqueDeChute);
+00059     \}
+00060 \}
+\end{DoxyCode}
+
+
+La documentation de cette classe a été générée à partir des fichiers suivants \+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{trame_8h}{trame.\+h}\item 
+\hyperlink{trame_8cpp}{trame.\+cpp}\end{DoxyCompactItemize}

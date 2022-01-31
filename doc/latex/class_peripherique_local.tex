@@ -1,0 +1,997 @@
+\hypertarget{class_peripherique_local}{}\subsection{Référence de la classe Peripherique\+Local}
+\label{class_peripherique_local}\index{Peripherique\+Local@{Peripherique\+Local}}
+
+
+Déclaration de la classe \hyperlink{class_peripherique_local}{Peripherique\+Local}.  
+
+
+
+
+{\ttfamily \#include $<$peripheriquelocal.\+h$>$}
+
+
+
+Graphe de collaboration de Peripherique\+Local\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_peripherique_local__coll__graph}
+\end{center}
+\end{figure}
+\subsubsection*{Signaux}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_peripherique_local_a7495daea266cb24dec35d85c651bd4c5}{connecte} ()
+\begin{DoxyCompactList}\small\item\em Signal émis lorsque la trottinette est connectée au périphérique Local. \end{DoxyCompactList}\item 
+void \hyperlink{class_peripherique_local_a2a8f0b072821f6d76db20b6f73b6acd0}{deconnecte} ()
+\begin{DoxyCompactList}\small\item\em Signal émis lorsque la trottinette est déconnectée du périphérique Local. \end{DoxyCompactList}\item 
+void \hyperlink{class_peripherique_local_a017f86e371bad418585d28b97557248a}{recherche} ()
+\begin{DoxyCompactList}\small\item\em Signal émis lorsque le périphérique Local recherche la trottinette. \end{DoxyCompactList}\item 
+void \hyperlink{class_peripherique_local_a41d9e18f2fd7e8e872db5fd3f21b11ff}{erreur} ()
+\begin{DoxyCompactList}\small\item\em Signal émis lorsque qu\textquotesingle{}il y a une erreur de connexion entre la trottinette et le périphérique Local. \end{DoxyCompactList}\item 
+void \hyperlink{class_peripherique_local_ad388116a3ad558055dcf02fa854ab361}{trottinette\+Trouvee} ()
+\begin{DoxyCompactList}\small\item\em Signal émis lorsque la trottinette a été detectée. \end{DoxyCompactList}\item 
+void \hyperlink{class_peripherique_local_a05dad5bf82b579731591407a0c098957}{arret\+Recherche} ()
+\begin{DoxyCompactList}\small\item\em Signal émis lorsque la recherche a été arrêtée. \end{DoxyCompactList}\item 
+void \hyperlink{class_peripherique_local_af980614027f938565b318eb1dfd579c5}{trame\+Recue} (Q\+String)
+\begin{DoxyCompactList}\small\item\em Signal émis lorsqu\textquotesingle{}une trame a été reçue de la trottinette. \end{DoxyCompactList}\item 
+void \hyperlink{class_peripherique_local_ae00597ad0acf0c5bed53e0b4d216214c}{vitesse\+Change} ()
+\begin{DoxyCompactList}\small\item\em Signal émis lorsque l\textquotesingle{}attribut vitesse\+Trottinette change. \end{DoxyCompactList}\item 
+void \hyperlink{class_peripherique_local_a19d92cae0098678a5a61f993274687f0}{batterie\+Change} ()
+\begin{DoxyCompactList}\small\item\em Signal émis lorsque l\textquotesingle{}attribut batterie\+Trottinette change. \end{DoxyCompactList}\item 
+void \hyperlink{class_peripherique_local_a9854fcde7556478f343b4a571864445a}{inclinaison\+Change} ()
+\begin{DoxyCompactList}\small\item\em Signal émis lorsque l\textquotesingle{}attribut inclinaison\+Trottinette change. \end{DoxyCompactList}\item 
+void \hyperlink{class_peripherique_local_ad5a28dbbf46c2cea6ed4d2c3633578e9}{distance\+Parcourue\+Change} ()
+\begin{DoxyCompactList}\small\item\em Signal émis lorsque l\textquotesingle{}attribut distance\+Parcourue\+Trottinette change. \end{DoxyCompactList}\item 
+void \hyperlink{class_peripherique_local_af93a0559c563c2a9489a6c78468af6f1}{trottinette\+Update} ()
+\begin{DoxyCompactList}\small\item\em Signal émis lorsque le traitement de la trame a été effectué \end{DoxyCompactList}\item 
+void \hyperlink{class_peripherique_local_a8c29d255e41df4bc381f4ff2d1451416}{depart\+Chrono} (int)
+\begin{DoxyCompactList}\small\item\em Signal émis pour lancer le chrono. \end{DoxyCompactList}\item 
+void \hyperlink{class_peripherique_local_a150599c1ded2462eb0e2d1d943459a34}{arret\+Chrono} ()
+\begin{DoxyCompactList}\small\item\em Signal émis pour arrêter le chrono. \end{DoxyCompactList}\item 
+void \hyperlink{class_peripherique_local_ae2560469bb9aa4597b9064f159d3956d}{chrono\+Change} ()
+\begin{DoxyCompactList}\small\item\em Signal émis lorsque le chrono change. \end{DoxyCompactList}\item 
+void \hyperlink{class_peripherique_local_a8900d04b38a366bf786d608a741d2dc0}{chrono\+Updated} ()
+\begin{DoxyCompactList}\small\item\em Signal émis lorsque le chrono a changé \end{DoxyCompactList}\item 
+void \hyperlink{class_peripherique_local_adfe5bde79cfe1f585dbbdf21269ebe2b}{risque\+De\+Chute\+Change} ()
+\begin{DoxyCompactList}\small\item\em Signal émis lorsque le risque a changé \end{DoxyCompactList}\item 
+void \hyperlink{class_peripherique_local_a4c2e32ed7feda45c6347144a99be7525}{risque\+De\+Chute\+Update} ()
+\begin{DoxyCompactList}\small\item\em Signal émis lorsque le risque a changé \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_peripherique_local_a99a652b8659a3692f164cf1a0382e4bf}{Peripherique\+Local} (Q\+Object $\ast$parent=nullptr)
+\begin{DoxyCompactList}\small\item\em Constructeur de la classe Peripherique Local. \end{DoxyCompactList}\item 
+Q\+\_\+\+I\+N\+V\+O\+K\+A\+B\+LE void \hyperlink{class_peripherique_local_aa3b12b1c122605cf00b8ab48ed4284c1}{rechercher} ()
+\begin{DoxyCompactList}\small\item\em Lance la recherche d\textquotesingle{}appareil Bluetooth. \end{DoxyCompactList}\item 
+Q\+\_\+\+I\+N\+V\+O\+K\+A\+B\+LE void \hyperlink{class_peripherique_local_afbbb6d37b616cc4579486c3b1ce700b2}{arreter} ()
+\begin{DoxyCompactList}\small\item\em Arrête la recherche d\textquotesingle{}appareil Bluetooth. \end{DoxyCompactList}\item 
+Q\+\_\+\+I\+N\+V\+O\+K\+A\+B\+LE Q\+String \hyperlink{class_peripherique_local_a465658a204541e309f2647d473f658d8}{get\+Trottinette\+Adresse\+Mac} ()
+\begin{DoxyCompactList}\small\item\em Retourne l\textquotesingle{}adresse M\+AC de la trottinette. \end{DoxyCompactList}\item 
+Q\+\_\+\+I\+N\+V\+O\+K\+A\+B\+LE Q\+String \hyperlink{class_peripherique_local_ac81a942b4d1d9e848649073c53ed6917}{get\+Trottinette\+Nom} ()
+\begin{DoxyCompactList}\small\item\em Retourne le nom de la trottinette. \end{DoxyCompactList}\item 
+Q\+\_\+\+I\+N\+V\+O\+K\+A\+B\+LE void \hyperlink{class_peripherique_local_af2e7f023f8ed72ebc1d36e66c440ceca}{connecter} ()
+\begin{DoxyCompactList}\small\item\em Etablis une connexion avec la socket du capteur de l\textquotesingle{}esp32. \end{DoxyCompactList}\item 
+Q\+String \hyperlink{class_peripherique_local_af105d458828fbb17e5b556e23d7d7b42}{get\+Nom} ()
+\begin{DoxyCompactList}\small\item\em Retourne l\textquotesingle{}adresse M\+AC de la trottinette. \end{DoxyCompactList}\item 
+Q\+String \hyperlink{class_peripherique_local_a79ce44141050f589d17f119a3b17444c}{get\+Adresse\+M\+AC} ()
+\begin{DoxyCompactList}\small\item\em Retourne le nom de la trottinette. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsubsection*{Connecteurs protégés}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_peripherique_local_aab3b5a9b584b0191b9f690add1cfa6ed}{identifier\+Trottinette} (const Q\+Bluetooth\+Device\+Info \&info)
+\begin{DoxyCompactList}\small\item\em Slot permettant l\textquotesingle{}identification de la trottinette lors de la recherche d\textquotesingle{}appareil bluetooth externe. \end{DoxyCompactList}\item 
+void \hyperlink{class_peripherique_local_ad6e76380e6c9f48c36a10ac4af2c3d96}{trottinette\+Connectee} ()
+\begin{DoxyCompactList}\small\item\em Slot permettant le changement d\textquotesingle{}êtat du booléen état connexion. \end{DoxyCompactList}\item 
+void \hyperlink{class_peripherique_local_ab081485bf0f9403d9e7fc5f0407cdc5c}{trottinette\+Deconnectee} ()
+\begin{DoxyCompactList}\small\item\em Slot permettant le changement d\textquotesingle{}êtat du booléen état connexion. \end{DoxyCompactList}\item 
+void \hyperlink{class_peripherique_local_abb86db4a2a3d72a5de32253aa9af1ce8}{erreur\+Connexion} (Q\+Bluetooth\+Socket\+::\+Socket\+Error error)
+\begin{DoxyCompactList}\small\item\em Slot qui change l\textquotesingle{}état de connexion en false si il y a une erreur et affiche l\textquotesingle{}erreur dans la console. \end{DoxyCompactList}\item 
+void \hyperlink{class_peripherique_local_a16add86080e72a5ce804ff9296e10415}{recherche\+Terminee} ()
+\begin{DoxyCompactList}\small\item\em Slot qui change l\textquotesingle{}état de recherche d\textquotesingle{}appareil. \end{DoxyCompactList}\item 
+void \hyperlink{class_peripherique_local_a48840475209b5cabcf60e3176de63b92}{socket\+Ready\+Read} ()
+\begin{DoxyCompactList}\small\item\em Slot qui envoie à la classe \hyperlink{class_trame}{Trame} les données reçues. \end{DoxyCompactList}\item 
+void \hyperlink{class_peripherique_local_a5702930929fea3e197fc1938a2303961}{afficher\+Donnees\+Trottinette} (Q\+String, Q\+String, Q\+String, Q\+String)
+\begin{DoxyCompactList}\small\item\em Slot qui modifie les attributs liées au données de fonctionnement la trottinette dans la classe peripherique\+Local. \end{DoxyCompactList}\item 
+void \hyperlink{class_peripherique_local_ae4f8521445a9dc3a51ff116e1f6597d7}{regler\+Chrono} ()
+\begin{DoxyCompactList}\small\item\em Slot qui démarre le Chrono lors de la connexion avec la trottinette. \end{DoxyCompactList}\item 
+void \hyperlink{class_peripherique_local_af567be15ff8eb2a00cb4e0674ebf3004}{afficher\+Chrono} (Q\+String)
+\begin{DoxyCompactList}\small\item\em Slot qui modifie l\textquotesingle{}attribut chrono contenant les données d\textquotesingle{}utilisation de la trottinette. \end{DoxyCompactList}\item 
+void \hyperlink{class_peripherique_local_ac20ba20d69997e441b1b782f8b506291}{afficher\+Risque\+De\+Chute} (Q\+String)
+\end{DoxyCompactItemize}
+\subsubsection*{Propriétés}
+\begin{DoxyCompactItemize}
+\item 
+Q\+String \hyperlink{class_peripherique_local_a16dcebf91bf74b8e3f1c2d90b77dda29}{nom}
+\begin{DoxyCompactList}\small\item\em Nom du périphérique local. \end{DoxyCompactList}\item 
+Q\+String \hyperlink{class_peripherique_local_a76ccdcef703e7aff1f6f66dc615feba7}{adresse\+M\+AC}
+\begin{DoxyCompactList}\small\item\em Adresse physique du périphérique local. \end{DoxyCompactList}\item 
+Q\+String \hyperlink{class_peripherique_local_a7feac59a6fbe481321aa1734d13f05c2}{batterie\+Trottinette}
+\begin{DoxyCompactList}\small\item\em Récupère la batterie de la \hyperlink{class_trottinette}{Trottinette}. \end{DoxyCompactList}\item 
+Q\+String \hyperlink{class_peripherique_local_aa0a0ebf6468e8a2c3a15828122ee830a}{vitesse\+Trottinette}
+\begin{DoxyCompactList}\small\item\em Récupère la vitesse de la \hyperlink{class_trottinette}{Trottinette}. \end{DoxyCompactList}\item 
+Q\+String \hyperlink{class_peripherique_local_ab85a254ce801dcdebd6be972aea0638b}{inclinaison\+Trottinette}
+\begin{DoxyCompactList}\small\item\em Récupère l\textquotesingle{}inclinaison de la \hyperlink{class_trottinette}{Trottinette}. \end{DoxyCompactList}\item 
+Q\+String \hyperlink{class_peripherique_local_a6b583dc9b350baf3edcc0cbc1611a6c5}{distance\+Parcourue\+Trottinette}
+\begin{DoxyCompactList}\small\item\em Récupère la distance Parcourue de la \hyperlink{class_trottinette}{Trottinette}. \end{DoxyCompactList}\item 
+Q\+String \hyperlink{class_peripherique_local_a79a43778c2db1c9c70784b6329dc383e}{risque\+De\+Chute}
+\item 
+bool \hyperlink{class_peripherique_local_af6f664b6af67f1c90eb017391ac812ed}{trottinette\+Detectee}
+\begin{DoxyCompactList}\small\item\em Booléen qui indique si une trottinette a été detectée. \end{DoxyCompactList}\item 
+bool \hyperlink{class_peripherique_local_a6638c29f6f75c3b4d329d93ae6ea4a48}{etat\+Recherche}
+\begin{DoxyCompactList}\small\item\em Booléen qui indique la recherche de la trottinette. \end{DoxyCompactList}\item 
+bool \hyperlink{class_peripherique_local_a5359e5a94b32b8a90c06ec999de13d2c}{etat\+Connexion}
+\begin{DoxyCompactList}\small\item\em Booléen qui indique l\textquotesingle{}etat de connexion du périphérique Local. \end{DoxyCompactList}\item 
+bool \hyperlink{class_peripherique_local_ad0e396b67eed256a7f27277ca7bfafdd}{connexion\+Erreur}
+\begin{DoxyCompactList}\small\item\em Booléen qui indique si il y a eu une erreur de connexion. \end{DoxyCompactList}\item 
+Q\+String \hyperlink{class_peripherique_local_a8b994159d5d56a45b693b191963d5053}{chrono}
+\begin{DoxyCompactList}\small\item\em Récupère la durée d\textquotesingle{}utilisation de la \hyperlink{class_trottinette}{Trottinette}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsubsection*{Attributs privés}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_trottinette}{Trottinette} $\ast$ \hyperlink{class_peripherique_local_aa110b2c3292270553f592362e45f710b}{trottinette}
+\begin{DoxyCompactList}\small\item\em Pointeur sur un objet \hyperlink{class_trottinette}{Trottinette}. \end{DoxyCompactList}\item 
+\hyperlink{class_trame}{Trame} $\ast$ \hyperlink{class_peripherique_local_a3c96dbda4eacf235c2bb0cabaa742122}{trame}
+\begin{DoxyCompactList}\small\item\em Pointeur sur un objet \hyperlink{class_trame}{Trame}. \end{DoxyCompactList}\item 
+\hyperlink{class_chronometre_utilisation}{Chronometre\+Utilisation} $\ast$ \hyperlink{class_peripherique_local_a89e0515901920b03e83066cf306f7f14}{chronometre\+Utilisation}
+\begin{DoxyCompactList}\small\item\em Pointeur sur un objet \hyperlink{class_chronometre_utilisation}{Chronometre\+Utilisation}. \end{DoxyCompactList}\item 
+Q\+Bluetooth\+Local\+Device \hyperlink{class_peripherique_local_a515044c46ba91db8d0b29362226860aa}{terminal\+Mobile}
+\begin{DoxyCompactList}\small\item\em Objet Q\+Bluetooth\+Local\+Device qui permet d\textquotesingle{}avoir accès au bluetooth du périphérique local. \end{DoxyCompactList}\item 
+Q\+Bluetooth\+Device\+Discovery\+Agent $\ast$ \hyperlink{class_peripherique_local_a9e398b7dd89a20b1bee67b8c3467da69}{discovery\+Agent\+Device}
+\begin{DoxyCompactList}\small\item\em Pointeur sur un objet Q\+Bluetooth\+Device\+Discovery\+Agent qui permet d\textquotesingle{}utiliser le service Discovery\+Agent (recherche de périphériques Bluetooth) \end{DoxyCompactList}\item 
+Q\+Bluetooth\+Socket $\ast$ \hyperlink{class_peripherique_local_a0058bf8367b4b8f907838b83a9150c07}{socket}
+\begin{DoxyCompactList}\small\item\em Pointeur sur un objet Q\+Bluetooth\+Socket qui permet de communiquer avec la trottinette. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsubsection{Description détaillée}
+\begin{DoxyAuthor}{Auteur}
+Somphon Sy
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+1 
+\end{DoxyVersion}
+
+
+\subsubsection{Documentation des constructeurs et destructeur}
+\mbox{\Hypertarget{class_peripherique_local_a99a652b8659a3692f164cf1a0382e4bf}\label{class_peripherique_local_a99a652b8659a3692f164cf1a0382e4bf}} 
+\index{Peripherique\+Local@{Peripherique\+Local}!Peripherique\+Local@{Peripherique\+Local}}
+\index{Peripherique\+Local@{Peripherique\+Local}!Peripherique\+Local@{Peripherique\+Local}}
+\paragraph{\texorpdfstring{Peripherique\+Local()}{PeripheriqueLocal()}}
+{\footnotesize\ttfamily Peripherique\+Local\+::\+Peripherique\+Local (\begin{DoxyParamCaption}\item[{Q\+Object $\ast$}]{parent = {\ttfamily nullptr} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+Constructeur de la classe \hyperlink{class_peripherique_local}{Peripherique\+Local}.
+
+
+\begin{DoxyParams}{Paramètres}
+{\em parent} & Q\+Object Adresse de l\textquotesingle{}objet Qt parent \\
+\hline
+\end{DoxyParams}
+
+
+Références \hyperlink{class_peripherique_local_a76ccdcef703e7aff1f6f66dc615feba7}{adresse\+M\+AC}, \hyperlink{class_peripherique_local_af567be15ff8eb2a00cb4e0674ebf3004}{afficher\+Chrono()}, \hyperlink{class_peripherique_local_a5702930929fea3e197fc1938a2303961}{afficher\+Donnees\+Trottinette()}, \hyperlink{class_peripherique_local_ac20ba20d69997e441b1b782f8b506291}{afficher\+Risque\+De\+Chute()}, \hyperlink{class_peripherique_local_a150599c1ded2462eb0e2d1d943459a34}{arret\+Chrono()}, \hyperlink{class_peripherique_local_afbbb6d37b616cc4579486c3b1ce700b2}{arreter()}, \hyperlink{class_peripherique_local_a89e0515901920b03e83066cf306f7f14}{chronometre\+Utilisation}, \hyperlink{class_peripherique_local_a8900d04b38a366bf786d608a741d2dc0}{chrono\+Updated()}, \hyperlink{class_peripherique_local_a8c29d255e41df4bc381f4ff2d1451416}{depart\+Chrono()}, \hyperlink{class_peripherique_local_a9e398b7dd89a20b1bee67b8c3467da69}{discovery\+Agent\+Device}, \hyperlink{class_peripherique_local_aab3b5a9b584b0191b9f690add1cfa6ed}{identifier\+Trottinette()}, \hyperlink{class_peripherique_local_a16dcebf91bf74b8e3f1c2d90b77dda29}{nom}, \hyperlink{class_peripherique_local_a16add86080e72a5ce804ff9296e10415}{recherche\+Terminee()}, \hyperlink{class_peripherique_local_a79a43778c2db1c9c70784b6329dc383e}{risque\+De\+Chute}, \hyperlink{class_peripherique_local_a515044c46ba91db8d0b29362226860aa}{terminal\+Mobile}, \hyperlink{class_peripherique_local_a3c96dbda4eacf235c2bb0cabaa742122}{trame}, et \hyperlink{class_peripherique_local_af980614027f938565b318eb1dfd579c5}{trame\+Recue()}.
+
+
+\begin{DoxyCode}
+00028                                                     : QObject(parent), 
+      \hyperlink{class_peripherique_local_aa110b2c3292270553f592362e45f710b}{trottinette}(\textcolor{keyword}{nullptr}), \hyperlink{class_peripherique_local_a9e398b7dd89a20b1bee67b8c3467da69}{discoveryAgentDevice}(\textcolor{keyword}{nullptr}), 
+      \hyperlink{class_peripherique_local_a0058bf8367b4b8f907838b83a9150c07}{socket}(\textcolor{keyword}{nullptr}), \hyperlink{class_peripherique_local_a5359e5a94b32b8a90c06ec999de13d2c}{etatConnexion}(\textcolor{keyword}{false}), \hyperlink{class_peripherique_local_a6638c29f6f75c3b4d329d93ae6ea4a48}{etatRecherche}(\textcolor{keyword}{false}), 
+      \hyperlink{class_peripherique_local_ad0e396b67eed256a7f27277ca7bfafdd}{connexionErreur}(\textcolor{keyword}{false}), \hyperlink{class_peripherique_local_af6f664b6af67f1c90eb017391ac812ed}{trottinetteDetectee}(\textcolor{keyword}{false})
+00029 \{
+00030     \textcolor{comment}{// Pointeur sur une classe Trame qui vas permettre de réaliser le traitement de trame}
+00031     \hyperlink{class_peripherique_local_a3c96dbda4eacf235c2bb0cabaa742122}{trame} = \textcolor{keyword}{new} \hyperlink{class_trame}{Trame}();
+00032 
+00033     connect(\textcolor{keyword}{this},SIGNAL(\hyperlink{class_peripherique_local_af980614027f938565b318eb1dfd579c5}{trameRecue}(QString )), \hyperlink{class_peripherique_local_a3c96dbda4eacf235c2bb0cabaa742122}{trame} , SLOT(traiterTrame(QString)));
+00034     connect(\hyperlink{class_peripherique_local_a3c96dbda4eacf235c2bb0cabaa742122}{trame},SIGNAL(\hyperlink{class_peripherique_local_a79a43778c2db1c9c70784b6329dc383e}{risqueDeChute}(QString)),SLOT(
+      \hyperlink{class_peripherique_local_ac20ba20d69997e441b1b782f8b506291}{afficherRisqueDeChute}(QString)));
+00035     connect(\hyperlink{class_peripherique_local_a3c96dbda4eacf235c2bb0cabaa742122}{trame}, SIGNAL(donneesTrottinette(QString,QString,QString,QString)), \textcolor{keyword}{this}, SLOT(
+      \hyperlink{class_peripherique_local_a5702930929fea3e197fc1938a2303961}{afficherDonneesTrottinette}(QString , QString , QString , QString)));
+00036 
+00037     \textcolor{comment}{// Pointeur sur une classe ChronometreUtilisation qui vas permettre de d'acquérir la durée
+       d'utilisation}
+00038     \hyperlink{class_peripherique_local_a89e0515901920b03e83066cf306f7f14}{chronometreUtilisation} = \textcolor{keyword}{new} \hyperlink{class_chronometre_utilisation}{ChronometreUtilisation}();
+00039     connect(\textcolor{keyword}{this}, SIGNAL(\hyperlink{class_peripherique_local_a8c29d255e41df4bc381f4ff2d1451416}{departChrono}(\textcolor{keywordtype}{int})), \hyperlink{class_peripherique_local_a89e0515901920b03e83066cf306f7f14}{chronometreUtilisation}, SLOT
+      (demarrer(\textcolor{keywordtype}{int})));
+00040     connect(\textcolor{keyword}{this}, SIGNAL(\hyperlink{class_peripherique_local_a150599c1ded2462eb0e2d1d943459a34}{arretChrono}()), \hyperlink{class_peripherique_local_a89e0515901920b03e83066cf306f7f14}{chronometreUtilisation}, SLOT(
+      \hyperlink{class_peripherique_local_afbbb6d37b616cc4579486c3b1ce700b2}{arreter}()));
+00041     connect(\hyperlink{class_peripherique_local_a89e0515901920b03e83066cf306f7f14}{chronometreUtilisation},SIGNAL(\hyperlink{class_peripherique_local_a8900d04b38a366bf786d608a741d2dc0}{chronoUpdated}(QString)),\textcolor{keyword}{this} ,
+       SLOT(\hyperlink{class_peripherique_local_af567be15ff8eb2a00cb4e0674ebf3004}{afficherChrono}(QString)));
+00042 
+00043     \textcolor{keywordflow}{if}(!\hyperlink{class_peripherique_local_a515044c46ba91db8d0b29362226860aa}{terminalMobile}.isValid())
+00044      \{
+00045          qCritical(\textcolor{stringliteral}{"Bluetooth désactivé !"});
+00046          \textcolor{keywordflow}{return};
+00047      \}
+00048     \hyperlink{class_peripherique_local_a515044c46ba91db8d0b29362226860aa}{terminalMobile}.powerOn();
+00049 
+00050     \hyperlink{class_peripherique_local_a16dcebf91bf74b8e3f1c2d90b77dda29}{nom} = \hyperlink{class_peripherique_local_a515044c46ba91db8d0b29362226860aa}{terminalMobile}.name();
+00051     \hyperlink{class_peripherique_local_a76ccdcef703e7aff1f6f66dc615feba7}{adresseMAC} = \hyperlink{class_peripherique_local_a515044c46ba91db8d0b29362226860aa}{terminalMobile}.address().toString();    
+00052 
+00053     \hyperlink{class_peripherique_local_a515044c46ba91db8d0b29362226860aa}{terminalMobile}.setHostMode(QBluetoothLocalDevice::HostDiscoverable);
+00054     \hyperlink{class_peripherique_local_a9e398b7dd89a20b1bee67b8c3467da69}{discoveryAgentDevice} = \textcolor{keyword}{new} QBluetoothDeviceDiscoveryAgent(\textcolor{keyword}{this});
+00055     \textcolor{comment}{//  Slot  pour  la  recherche  de  périphériques  Bluetooth}
+00056     connect(\hyperlink{class_peripherique_local_a9e398b7dd89a20b1bee67b8c3467da69}{discoveryAgentDevice}, SIGNAL(deviceDiscovered(QBluetoothDeviceInfo)), \textcolor{keyword}{this},
+       SLOT(\hyperlink{class_peripherique_local_aab3b5a9b584b0191b9f690add1cfa6ed}{identifierTrottinette}(QBluetoothDeviceInfo)));
+00057     connect(\hyperlink{class_peripherique_local_a9e398b7dd89a20b1bee67b8c3467da69}{discoveryAgentDevice}, SIGNAL(finished()), \textcolor{keyword}{this}, SLOT(
+      \hyperlink{class_peripherique_local_a16add86080e72a5ce804ff9296e10415}{rechercheTerminee}()));
+00058     qDebug() << Q\_FUNC\_INFO << \textcolor{stringliteral}{"nom"} << \hyperlink{class_peripherique_local_a16dcebf91bf74b8e3f1c2d90b77dda29}{nom} << \textcolor{stringliteral}{"adresseMAC"} << \hyperlink{class_peripherique_local_a76ccdcef703e7aff1f6f66dc615feba7}{adresseMAC};
+00059 \}
+\end{DoxyCode}
+
+
+\subsubsection{Documentation des fonctions membres}
+\mbox{\Hypertarget{class_peripherique_local_af567be15ff8eb2a00cb4e0674ebf3004}\label{class_peripherique_local_af567be15ff8eb2a00cb4e0674ebf3004}} 
+\index{Peripherique\+Local@{Peripherique\+Local}!afficher\+Chrono@{afficher\+Chrono}}
+\index{afficher\+Chrono@{afficher\+Chrono}!Peripherique\+Local@{Peripherique\+Local}}
+\paragraph{\texorpdfstring{afficher\+Chrono}{afficherChrono}}
+{\footnotesize\ttfamily void Peripherique\+Local\+::afficher\+Chrono (\begin{DoxyParamCaption}\item[{Q\+String}]{chrono }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [slot]}}
+
+
+
+Références \hyperlink{class_peripherique_local_a8b994159d5d56a45b693b191963d5053}{chrono}, et \hyperlink{class_peripherique_local_a8900d04b38a366bf786d608a741d2dc0}{chrono\+Updated()}.
+
+
+
+Référencé par \hyperlink{class_peripherique_local_a99a652b8659a3692f164cf1a0382e4bf}{Peripherique\+Local()}.
+
+
+\begin{DoxyCode}
+00298 \{
+00299     this->\hyperlink{class_peripherique_local_a8b994159d5d56a45b693b191963d5053}{chrono} = \hyperlink{class_peripherique_local_a8b994159d5d56a45b693b191963d5053}{chrono};
+00300     emit \hyperlink{class_peripherique_local_a8900d04b38a366bf786d608a741d2dc0}{chronoUpdated}();
+00301 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_peripherique_local_a5702930929fea3e197fc1938a2303961}\label{class_peripherique_local_a5702930929fea3e197fc1938a2303961}} 
+\index{Peripherique\+Local@{Peripherique\+Local}!afficher\+Donnees\+Trottinette@{afficher\+Donnees\+Trottinette}}
+\index{afficher\+Donnees\+Trottinette@{afficher\+Donnees\+Trottinette}!Peripherique\+Local@{Peripherique\+Local}}
+\paragraph{\texorpdfstring{afficher\+Donnees\+Trottinette}{afficherDonneesTrottinette}}
+{\footnotesize\ttfamily void Peripherique\+Local\+::afficher\+Donnees\+Trottinette (\begin{DoxyParamCaption}\item[{Q\+String}]{vitesse,  }\item[{Q\+String}]{inclinaison,  }\item[{Q\+String}]{batterie,  }\item[{Q\+String}]{distance\+Parcourue }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [slot]}}
+
+
+
+Références \hyperlink{class_peripherique_local_a7feac59a6fbe481321aa1734d13f05c2}{batterie\+Trottinette}, \hyperlink{class_peripherique_local_a6b583dc9b350baf3edcc0cbc1611a6c5}{distance\+Parcourue\+Trottinette}, \hyperlink{class_peripherique_local_ab85a254ce801dcdebd6be972aea0638b}{inclinaison\+Trottinette}, \hyperlink{class_peripherique_local_af93a0559c563c2a9489a6c78468af6f1}{trottinette\+Update()}, et \hyperlink{class_peripherique_local_aa0a0ebf6468e8a2c3a15828122ee830a}{vitesse\+Trottinette}.
+
+
+
+Référencé par \hyperlink{class_peripherique_local_a99a652b8659a3692f164cf1a0382e4bf}{Peripherique\+Local()}.
+
+
+\begin{DoxyCode}
+00280 \{
+00281     qDebug() << Q\_FUNC\_INFO;
+00282     this->\hyperlink{class_peripherique_local_aa0a0ebf6468e8a2c3a15828122ee830a}{vitesseTrottinette}= vitesse ;
+00283     this->\hyperlink{class_peripherique_local_ab85a254ce801dcdebd6be972aea0638b}{inclinaisonTrottinette} = inclinaison;
+00284     this->\hyperlink{class_peripherique_local_a7feac59a6fbe481321aa1734d13f05c2}{batterieTrottinette} = batterie;
+00285     this->\hyperlink{class_peripherique_local_a6b583dc9b350baf3edcc0cbc1611a6c5}{distanceParcourueTrottinette} = distanceParcourue;
+00286     emit \hyperlink{class_peripherique_local_af93a0559c563c2a9489a6c78468af6f1}{trottinetteUpdate}();
+00287 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_peripherique_local_ac20ba20d69997e441b1b782f8b506291}\label{class_peripherique_local_ac20ba20d69997e441b1b782f8b506291}} 
+\index{Peripherique\+Local@{Peripherique\+Local}!afficher\+Risque\+De\+Chute@{afficher\+Risque\+De\+Chute}}
+\index{afficher\+Risque\+De\+Chute@{afficher\+Risque\+De\+Chute}!Peripherique\+Local@{Peripherique\+Local}}
+\paragraph{\texorpdfstring{afficher\+Risque\+De\+Chute}{afficherRisqueDeChute}}
+{\footnotesize\ttfamily void Peripherique\+Local\+::afficher\+Risque\+De\+Chute (\begin{DoxyParamCaption}\item[{Q\+String}]{indicateur\+Risque\+De\+Chute }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [slot]}}
+
+
+
+Références \hyperlink{class_peripherique_local_a79a43778c2db1c9c70784b6329dc383e}{risque\+De\+Chute}, et \hyperlink{class_peripherique_local_a4c2e32ed7feda45c6347144a99be7525}{risque\+De\+Chute\+Update()}.
+
+
+
+Référencé par \hyperlink{class_peripherique_local_a99a652b8659a3692f164cf1a0382e4bf}{Peripherique\+Local()}.
+
+
+\begin{DoxyCode}
+00304 \{
+00305     \hyperlink{class_peripherique_local_a79a43778c2db1c9c70784b6329dc383e}{risqueDeChute}= indicateurRisqueDeChute;
+00306     emit \hyperlink{class_peripherique_local_a4c2e32ed7feda45c6347144a99be7525}{risqueDeChuteUpdate}();
+00307 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_peripherique_local_a150599c1ded2462eb0e2d1d943459a34}\label{class_peripherique_local_a150599c1ded2462eb0e2d1d943459a34}} 
+\index{Peripherique\+Local@{Peripherique\+Local}!arret\+Chrono@{arret\+Chrono}}
+\index{arret\+Chrono@{arret\+Chrono}!Peripherique\+Local@{Peripherique\+Local}}
+\paragraph{\texorpdfstring{arret\+Chrono}{arretChrono}}
+{\footnotesize\ttfamily void Peripherique\+Local\+::arret\+Chrono (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+
+
+Référencé par \hyperlink{class_peripherique_local_a99a652b8659a3692f164cf1a0382e4bf}{Peripherique\+Local()}, \hyperlink{class_peripherique_local_ae4f8521445a9dc3a51ff116e1f6597d7}{regler\+Chrono()}, et \hyperlink{class_peripherique_local_ab081485bf0f9403d9e7fc5f0407cdc5c}{trottinette\+Deconnectee()}.
+
+\mbox{\Hypertarget{class_peripherique_local_afbbb6d37b616cc4579486c3b1ce700b2}\label{class_peripherique_local_afbbb6d37b616cc4579486c3b1ce700b2}} 
+\index{Peripherique\+Local@{Peripherique\+Local}!arreter@{arreter}}
+\index{arreter@{arreter}!Peripherique\+Local@{Peripherique\+Local}}
+\paragraph{\texorpdfstring{arreter()}{arreter()}}
+{\footnotesize\ttfamily void Peripherique\+Local\+::arreter (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Arrête la recherche de périphérique Bluetooth. 
+
+Références \hyperlink{class_peripherique_local_a05dad5bf82b579731591407a0c098957}{arret\+Recherche()}, \hyperlink{class_peripherique_local_a9e398b7dd89a20b1bee67b8c3467da69}{discovery\+Agent\+Device}, et \hyperlink{class_peripherique_local_a6638c29f6f75c3b4d329d93ae6ea4a48}{etat\+Recherche}.
+
+
+
+Référencé par \hyperlink{class_peripherique_local_a99a652b8659a3692f164cf1a0382e4bf}{Peripherique\+Local()}.
+
+
+\begin{DoxyCode}
+00113 \{
+00114     qDebug() << Q\_FUNC\_INFO ;
+00115     \hyperlink{class_peripherique_local_a6638c29f6f75c3b4d329d93ae6ea4a48}{etatRecherche} = false ;
+00116     \hyperlink{class_peripherique_local_a9e398b7dd89a20b1bee67b8c3467da69}{discoveryAgentDevice}->stop();
+00117     emit \hyperlink{class_peripherique_local_a05dad5bf82b579731591407a0c098957}{arretRecherche}();
+00118 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_peripherique_local_a05dad5bf82b579731591407a0c098957}\label{class_peripherique_local_a05dad5bf82b579731591407a0c098957}} 
+\index{Peripherique\+Local@{Peripherique\+Local}!arret\+Recherche@{arret\+Recherche}}
+\index{arret\+Recherche@{arret\+Recherche}!Peripherique\+Local@{Peripherique\+Local}}
+\paragraph{\texorpdfstring{arret\+Recherche}{arretRecherche}}
+{\footnotesize\ttfamily void Peripherique\+Local\+::arret\+Recherche (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+
+
+Référencé par \hyperlink{class_peripherique_local_afbbb6d37b616cc4579486c3b1ce700b2}{arreter()}, et \hyperlink{class_peripherique_local_a16add86080e72a5ce804ff9296e10415}{recherche\+Terminee()}.
+
+\mbox{\Hypertarget{class_peripherique_local_a19d92cae0098678a5a61f993274687f0}\label{class_peripherique_local_a19d92cae0098678a5a61f993274687f0}} 
+\index{Peripherique\+Local@{Peripherique\+Local}!batterie\+Change@{batterie\+Change}}
+\index{batterie\+Change@{batterie\+Change}!Peripherique\+Local@{Peripherique\+Local}}
+\paragraph{\texorpdfstring{batterie\+Change}{batterieChange}}
+{\footnotesize\ttfamily void Peripherique\+Local\+::batterie\+Change (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+\mbox{\Hypertarget{class_peripherique_local_ae2560469bb9aa4597b9064f159d3956d}\label{class_peripherique_local_ae2560469bb9aa4597b9064f159d3956d}} 
+\index{Peripherique\+Local@{Peripherique\+Local}!chrono\+Change@{chrono\+Change}}
+\index{chrono\+Change@{chrono\+Change}!Peripherique\+Local@{Peripherique\+Local}}
+\paragraph{\texorpdfstring{chrono\+Change}{chronoChange}}
+{\footnotesize\ttfamily void Peripherique\+Local\+::chrono\+Change (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+\mbox{\Hypertarget{class_peripherique_local_a8900d04b38a366bf786d608a741d2dc0}\label{class_peripherique_local_a8900d04b38a366bf786d608a741d2dc0}} 
+\index{Peripherique\+Local@{Peripherique\+Local}!chrono\+Updated@{chrono\+Updated}}
+\index{chrono\+Updated@{chrono\+Updated}!Peripherique\+Local@{Peripherique\+Local}}
+\paragraph{\texorpdfstring{chrono\+Updated}{chronoUpdated}}
+{\footnotesize\ttfamily void Peripherique\+Local\+::chrono\+Updated (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+
+
+Référencé par \hyperlink{class_peripherique_local_af567be15ff8eb2a00cb4e0674ebf3004}{afficher\+Chrono()}, et \hyperlink{class_peripherique_local_a99a652b8659a3692f164cf1a0382e4bf}{Peripherique\+Local()}.
+
+\mbox{\Hypertarget{class_peripherique_local_a7495daea266cb24dec35d85c651bd4c5}\label{class_peripherique_local_a7495daea266cb24dec35d85c651bd4c5}} 
+\index{Peripherique\+Local@{Peripherique\+Local}!connecte@{connecte}}
+\index{connecte@{connecte}!Peripherique\+Local@{Peripherique\+Local}}
+\paragraph{\texorpdfstring{connecte}{connecte}}
+{\footnotesize\ttfamily void Peripherique\+Local\+::connecte (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+
+
+Référencé par \hyperlink{class_peripherique_local_ad6e76380e6c9f48c36a10ac4af2c3d96}{trottinette\+Connectee()}.
+
+\mbox{\Hypertarget{class_peripherique_local_af2e7f023f8ed72ebc1d36e66c440ceca}\label{class_peripherique_local_af2e7f023f8ed72ebc1d36e66c440ceca}} 
+\index{Peripherique\+Local@{Peripherique\+Local}!connecter@{connecter}}
+\index{connecter@{connecter}!Peripherique\+Local@{Peripherique\+Local}}
+\paragraph{\texorpdfstring{connecter()}{connecter()}}
+{\footnotesize\ttfamily void Peripherique\+Local\+::connecter (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Crée un socket client et connecte le socket au port série de la carte d\textquotesingle{}acquisition de la trottinette. 
+
+Références \hyperlink{class_peripherique_local_abb86db4a2a3d72a5de32253aa9af1ce8}{erreur\+Connexion()}, \hyperlink{class_peripherique_local_a5359e5a94b32b8a90c06ec999de13d2c}{etat\+Connexion}, \hyperlink{class_peripherique_local_a465658a204541e309f2647d473f658d8}{get\+Trottinette\+Adresse\+Mac()}, \hyperlink{class_peripherique_local_ae4f8521445a9dc3a51ff116e1f6597d7}{regler\+Chrono()}, \hyperlink{class_peripherique_local_a0058bf8367b4b8f907838b83a9150c07}{socket}, \hyperlink{class_peripherique_local_a48840475209b5cabcf60e3176de63b92}{socket\+Ready\+Read()}, \hyperlink{class_peripherique_local_ad6e76380e6c9f48c36a10ac4af2c3d96}{trottinette\+Connectee()}, \hyperlink{class_peripherique_local_ab081485bf0f9403d9e7fc5f0407cdc5c}{trottinette\+Deconnectee()}, et \hyperlink{class_peripherique_local_af6f664b6af67f1c90eb017391ac812ed}{trottinette\+Detectee}.
+
+
+\begin{DoxyCode}
+00185 \{
+00186     \textcolor{comment}{//qDebug() << Q\_FUNC\_INFO << "trottinetteDetectee" << trottinetteDetectee;}
+00187 
+00188     \textcolor{keywordflow}{if}(!\hyperlink{class_peripherique_local_af6f664b6af67f1c90eb017391ac812ed}{trottinetteDetectee})
+00189         \textcolor{keywordflow}{return};
+00190 
+00191     \textcolor{keywordflow}{if} (!\hyperlink{class_peripherique_local_a0058bf8367b4b8f907838b83a9150c07}{socket})
+00192     \{
+00193         \hyperlink{class_peripherique_local_a0058bf8367b4b8f907838b83a9150c07}{socket} = \textcolor{keyword}{new} QBluetoothSocket(QBluetoothServiceInfo::RfcommProtocol);
+00194         connect(\hyperlink{class_peripherique_local_a0058bf8367b4b8f907838b83a9150c07}{socket}, SIGNAL(connected()), \textcolor{keyword}{this}, SLOT(
+      \hyperlink{class_peripherique_local_ad6e76380e6c9f48c36a10ac4af2c3d96}{trottinetteConnectee}()));
+00195         connect(\hyperlink{class_peripherique_local_a0058bf8367b4b8f907838b83a9150c07}{socket}, SIGNAL(connected()),\textcolor{keyword}{this}, SLOT(\hyperlink{class_peripherique_local_ae4f8521445a9dc3a51ff116e1f6597d7}{reglerChrono}()));
+00196         connect(\hyperlink{class_peripherique_local_a0058bf8367b4b8f907838b83a9150c07}{socket}, SIGNAL(disconnected()), \textcolor{keyword}{this}, SLOT(
+      \hyperlink{class_peripherique_local_ab081485bf0f9403d9e7fc5f0407cdc5c}{trottinetteDeconnectee}()));
+00197         connect(\hyperlink{class_peripherique_local_a0058bf8367b4b8f907838b83a9150c07}{socket}, SIGNAL(readyRead()), \textcolor{keyword}{this}, SLOT(\hyperlink{class_peripherique_local_a48840475209b5cabcf60e3176de63b92}{socketReadyRead}()));
+00198         connect(\hyperlink{class_peripherique_local_a0058bf8367b4b8f907838b83a9150c07}{socket}, SIGNAL(error(QBluetoothSocket::SocketError error)), \textcolor{keyword}{this}, SLOT(
+      \hyperlink{class_peripherique_local_abb86db4a2a3d72a5de32253aa9af1ce8}{erreurConnexion}(QBluetoothSocket::SocketError error)));
+00199 
+00200     \}
+00201 
+00202     \textcolor{keywordflow}{if} (\hyperlink{class_peripherique_local_a0058bf8367b4b8f907838b83a9150c07}{socket}->isOpen())
+00203     \{
+00204         \hyperlink{class_peripherique_local_a0058bf8367b4b8f907838b83a9150c07}{socket}->close();
+00205     \}
+00206 
+00207     \textcolor{keywordflow}{if}(\hyperlink{class_peripherique_local_a5359e5a94b32b8a90c06ec999de13d2c}{etatConnexion} == \textcolor{keyword}{false})
+00208     \{
+00209         QBluetoothUuid uuid = QBluetoothUuid(QBluetoothUuid::SerialPort);
+00210         \hyperlink{class_peripherique_local_a0058bf8367b4b8f907838b83a9150c07}{socket}->connectToService(QBluetoothAddress(this->
+      \hyperlink{class_peripherique_local_a465658a204541e309f2647d473f658d8}{getTrottinetteAdresseMac}()), uuid);
+00211         \hyperlink{class_peripherique_local_a0058bf8367b4b8f907838b83a9150c07}{socket}->open(QIODevice::ReadWrite);
+00212         qDebug() << Q\_FUNC\_INFO << \textcolor{stringliteral}{"demande connexion"} << this->
+      \hyperlink{class_peripherique_local_a465658a204541e309f2647d473f658d8}{getTrottinetteAdresseMac}();
+00213     \}
+00214 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_peripherique_local_a2a8f0b072821f6d76db20b6f73b6acd0}\label{class_peripherique_local_a2a8f0b072821f6d76db20b6f73b6acd0}} 
+\index{Peripherique\+Local@{Peripherique\+Local}!deconnecte@{deconnecte}}
+\index{deconnecte@{deconnecte}!Peripherique\+Local@{Peripherique\+Local}}
+\paragraph{\texorpdfstring{deconnecte}{deconnecte}}
+{\footnotesize\ttfamily void Peripherique\+Local\+::deconnecte (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+
+
+Référencé par \hyperlink{class_peripherique_local_ab081485bf0f9403d9e7fc5f0407cdc5c}{trottinette\+Deconnectee()}.
+
+\mbox{\Hypertarget{class_peripherique_local_a8c29d255e41df4bc381f4ff2d1451416}\label{class_peripherique_local_a8c29d255e41df4bc381f4ff2d1451416}} 
+\index{Peripherique\+Local@{Peripherique\+Local}!depart\+Chrono@{depart\+Chrono}}
+\index{depart\+Chrono@{depart\+Chrono}!Peripherique\+Local@{Peripherique\+Local}}
+\paragraph{\texorpdfstring{depart\+Chrono}{departChrono}}
+{\footnotesize\ttfamily void Peripherique\+Local\+::depart\+Chrono (\begin{DoxyParamCaption}\item[{int}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+
+
+Référencé par \hyperlink{class_peripherique_local_a99a652b8659a3692f164cf1a0382e4bf}{Peripherique\+Local()}, et \hyperlink{class_peripherique_local_ae4f8521445a9dc3a51ff116e1f6597d7}{regler\+Chrono()}.
+
+\mbox{\Hypertarget{class_peripherique_local_ad5a28dbbf46c2cea6ed4d2c3633578e9}\label{class_peripherique_local_ad5a28dbbf46c2cea6ed4d2c3633578e9}} 
+\index{Peripherique\+Local@{Peripherique\+Local}!distance\+Parcourue\+Change@{distance\+Parcourue\+Change}}
+\index{distance\+Parcourue\+Change@{distance\+Parcourue\+Change}!Peripherique\+Local@{Peripherique\+Local}}
+\paragraph{\texorpdfstring{distance\+Parcourue\+Change}{distanceParcourueChange}}
+{\footnotesize\ttfamily void Peripherique\+Local\+::distance\+Parcourue\+Change (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+\mbox{\Hypertarget{class_peripherique_local_a41d9e18f2fd7e8e872db5fd3f21b11ff}\label{class_peripherique_local_a41d9e18f2fd7e8e872db5fd3f21b11ff}} 
+\index{Peripherique\+Local@{Peripherique\+Local}!erreur@{erreur}}
+\index{erreur@{erreur}!Peripherique\+Local@{Peripherique\+Local}}
+\paragraph{\texorpdfstring{erreur}{erreur}}
+{\footnotesize\ttfamily void Peripherique\+Local\+::erreur (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+
+
+Référencé par \hyperlink{class_peripherique_local_abb86db4a2a3d72a5de32253aa9af1ce8}{erreur\+Connexion()}.
+
+\mbox{\Hypertarget{class_peripherique_local_abb86db4a2a3d72a5de32253aa9af1ce8}\label{class_peripherique_local_abb86db4a2a3d72a5de32253aa9af1ce8}} 
+\index{Peripherique\+Local@{Peripherique\+Local}!erreur\+Connexion@{erreur\+Connexion}}
+\index{erreur\+Connexion@{erreur\+Connexion}!Peripherique\+Local@{Peripherique\+Local}}
+\paragraph{\texorpdfstring{erreur\+Connexion}{erreurConnexion}}
+{\footnotesize\ttfamily void Peripherique\+Local\+::erreur\+Connexion (\begin{DoxyParamCaption}\item[{Q\+Bluetooth\+Socket\+::\+Socket\+Error}]{error }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [slot]}}
+
+Affiche l\textquotesingle{}erreur dans le terminal de la console.
+
+
+\begin{DoxyParams}{Paramètres}
+{\em error} & Q\+Bluetooth\+Socket\+::\+Socket\+Error numéro d\textquotesingle{}erreur \\
+\hline
+\end{DoxyParams}
+
+
+Références \hyperlink{class_peripherique_local_a41d9e18f2fd7e8e872db5fd3f21b11ff}{erreur()}, et \hyperlink{class_peripherique_local_a5359e5a94b32b8a90c06ec999de13d2c}{etat\+Connexion}.
+
+
+
+Référencé par \hyperlink{class_peripherique_local_af2e7f023f8ed72ebc1d36e66c440ceca}{connecter()}.
+
+
+\begin{DoxyCode}
+00273 \{
+00274     qDebug() << Q\_FUNC\_INFO << error;
+00275     \hyperlink{class_peripherique_local_a5359e5a94b32b8a90c06ec999de13d2c}{etatConnexion} = \textcolor{keyword}{false};
+00276     emit \hyperlink{class_peripherique_local_a41d9e18f2fd7e8e872db5fd3f21b11ff}{erreur}();
+00277 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_peripherique_local_a79ce44141050f589d17f119a3b17444c}\label{class_peripherique_local_a79ce44141050f589d17f119a3b17444c}} 
+\index{Peripherique\+Local@{Peripherique\+Local}!get\+Adresse\+M\+AC@{get\+Adresse\+M\+AC}}
+\index{get\+Adresse\+M\+AC@{get\+Adresse\+M\+AC}!Peripherique\+Local@{Peripherique\+Local}}
+\paragraph{\texorpdfstring{get\+Adresse\+M\+A\+C()}{getAdresseMAC()}}
+{\footnotesize\ttfamily Q\+String Peripherique\+Local\+::get\+Adresse\+M\+AC (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Références \hyperlink{class_peripherique_local_a76ccdcef703e7aff1f6f66dc615feba7}{adresse\+M\+AC}.
+
+
+\begin{DoxyCode}
+00081 \{
+00082     \textcolor{keywordflow}{return} \hyperlink{class_peripherique_local_a76ccdcef703e7aff1f6f66dc615feba7}{adresseMAC} ;
+00083 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_peripherique_local_af105d458828fbb17e5b556e23d7d7b42}\label{class_peripherique_local_af105d458828fbb17e5b556e23d7d7b42}} 
+\index{Peripherique\+Local@{Peripherique\+Local}!get\+Nom@{get\+Nom}}
+\index{get\+Nom@{get\+Nom}!Peripherique\+Local@{Peripherique\+Local}}
+\paragraph{\texorpdfstring{get\+Nom()}{getNom()}}
+{\footnotesize\ttfamily Q\+String Peripherique\+Local\+::get\+Nom (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Accesseur de l\textquotesingle{}attribut nom.
+
+\begin{DoxyReturn}{Renvoie}
+Q\+String nom du périphérique local 
+\end{DoxyReturn}
+
+
+Références \hyperlink{class_peripherique_local_a16dcebf91bf74b8e3f1c2d90b77dda29}{nom}.
+
+
+\begin{DoxyCode}
+00069 \{
+00070     \textcolor{keywordflow}{return} \hyperlink{class_peripherique_local_a16dcebf91bf74b8e3f1c2d90b77dda29}{nom} ;
+00071 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_peripherique_local_a465658a204541e309f2647d473f658d8}\label{class_peripherique_local_a465658a204541e309f2647d473f658d8}} 
+\index{Peripherique\+Local@{Peripherique\+Local}!get\+Trottinette\+Adresse\+Mac@{get\+Trottinette\+Adresse\+Mac}}
+\index{get\+Trottinette\+Adresse\+Mac@{get\+Trottinette\+Adresse\+Mac}!Peripherique\+Local@{Peripherique\+Local}}
+\paragraph{\texorpdfstring{get\+Trottinette\+Adresse\+Mac()}{getTrottinetteAdresseMac()}}
+{\footnotesize\ttfamily Q\+String Peripherique\+Local\+::get\+Trottinette\+Adresse\+Mac (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Accesseur de l\textquotesingle{}adresse\+M\+AC de la trottinette.
+
+\begin{DoxyReturn}{Renvoie}
+Q\+String adresse Mac de la trottinette 
+\end{DoxyReturn}
+
+
+Références \hyperlink{class_trottinette_a4d319bfda23b3d871b62e3e910cc204d}{Trottinette\+::get\+Adresse\+M\+A\+C()}, et \hyperlink{class_peripherique_local_aa110b2c3292270553f592362e45f710b}{trottinette}.
+
+
+
+Référencé par \hyperlink{class_peripherique_local_af2e7f023f8ed72ebc1d36e66c440ceca}{connecter()}.
+
+
+\begin{DoxyCode}
+00162 \{
+00163     \textcolor{keywordflow}{return} \hyperlink{class_peripherique_local_aa110b2c3292270553f592362e45f710b}{trottinette}->\hyperlink{class_trottinette_a4d319bfda23b3d871b62e3e910cc204d}{getAdresseMAC}();
+00164 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_peripherique_local_ac81a942b4d1d9e848649073c53ed6917}\label{class_peripherique_local_ac81a942b4d1d9e848649073c53ed6917}} 
+\index{Peripherique\+Local@{Peripherique\+Local}!get\+Trottinette\+Nom@{get\+Trottinette\+Nom}}
+\index{get\+Trottinette\+Nom@{get\+Trottinette\+Nom}!Peripherique\+Local@{Peripherique\+Local}}
+\paragraph{\texorpdfstring{get\+Trottinette\+Nom()}{getTrottinetteNom()}}
+{\footnotesize\ttfamily Q\+String Peripherique\+Local\+::get\+Trottinette\+Nom (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Accesseur du nom de la trottinette.
+
+\begin{DoxyReturn}{Renvoie}
+Q\+String nom de la trottinette 
+\end{DoxyReturn}
+
+
+Références \hyperlink{class_trottinette_a9b191a43bacb534dca0727aedd3076cd}{Trottinette\+::get\+Nom()}, et \hyperlink{class_peripherique_local_aa110b2c3292270553f592362e45f710b}{trottinette}.
+
+
+\begin{DoxyCode}
+00174 \{
+00175     \textcolor{keywordflow}{return} \hyperlink{class_peripherique_local_aa110b2c3292270553f592362e45f710b}{trottinette}->\hyperlink{class_trottinette_a9b191a43bacb534dca0727aedd3076cd}{getNom}();
+00176 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_peripherique_local_aab3b5a9b584b0191b9f690add1cfa6ed}\label{class_peripherique_local_aab3b5a9b584b0191b9f690add1cfa6ed}} 
+\index{Peripherique\+Local@{Peripherique\+Local}!identifier\+Trottinette@{identifier\+Trottinette}}
+\index{identifier\+Trottinette@{identifier\+Trottinette}!Peripherique\+Local@{Peripherique\+Local}}
+\paragraph{\texorpdfstring{identifier\+Trottinette}{identifierTrottinette}}
+{\footnotesize\ttfamily void Peripherique\+Local\+::identifier\+Trottinette (\begin{DoxyParamCaption}\item[{const Q\+Bluetooth\+Device\+Info \&}]{info }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [slot]}}
+
+Identifie la trottinette à partir du nom des appareils Bluetooth externes et lorsque la trottinette est detectée crée un objet dynamique avec les données de la trottinette.
+
+
+\begin{DoxyParams}{Paramètres}
+{\em info} & const Q\+Bluetooth\+Device\+Info information sur Périphérique Bluetooth Externe \\
+\hline
+\end{DoxyParams}
+
+
+Références \hyperlink{class_peripherique_local_a9e398b7dd89a20b1bee67b8c3467da69}{discovery\+Agent\+Device}, \hyperlink{class_peripherique_local_aa110b2c3292270553f592362e45f710b}{trottinette}, \hyperlink{class_peripherique_local_af6f664b6af67f1c90eb017391ac812ed}{trottinette\+Detectee}, et \hyperlink{class_peripherique_local_ad388116a3ad558055dcf02fa854ab361}{trottinette\+Trouvee()}.
+
+
+
+Référencé par \hyperlink{class_peripherique_local_a99a652b8659a3692f164cf1a0382e4bf}{Peripherique\+Local()}.
+
+
+\begin{DoxyCode}
+00129 \{
+00130     qDebug() << Q\_FUNC\_INFO << info.name() << info.address().toString();
+00131     \textcolor{keywordflow}{if}(info.name() == \textcolor{stringliteral}{"tec"})
+00132     \{
+00133         qDebug() << Q\_FUNC\_INFO << \textcolor{stringliteral}{"Trottinette"} << info.name() << info.address().toString();
+00134         \hyperlink{class_peripherique_local_aa110b2c3292270553f592362e45f710b}{trottinette} = \textcolor{keyword}{new} \hyperlink{class_trottinette}{Trottinette}(info.name(),info.address().toString());
+00135         \hyperlink{class_peripherique_local_af6f664b6af67f1c90eb017391ac812ed}{trottinetteDetectee} = \textcolor{keyword}{true};
+00136         \hyperlink{class_peripherique_local_a9e398b7dd89a20b1bee67b8c3467da69}{discoveryAgentDevice}->stop();
+00137         emit \hyperlink{class_peripherique_local_ad388116a3ad558055dcf02fa854ab361}{trottinetteTrouvee}();
+00138     \}
+00139 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_peripherique_local_a9854fcde7556478f343b4a571864445a}\label{class_peripherique_local_a9854fcde7556478f343b4a571864445a}} 
+\index{Peripherique\+Local@{Peripherique\+Local}!inclinaison\+Change@{inclinaison\+Change}}
+\index{inclinaison\+Change@{inclinaison\+Change}!Peripherique\+Local@{Peripherique\+Local}}
+\paragraph{\texorpdfstring{inclinaison\+Change}{inclinaisonChange}}
+{\footnotesize\ttfamily void Peripherique\+Local\+::inclinaison\+Change (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+\mbox{\Hypertarget{class_peripherique_local_a017f86e371bad418585d28b97557248a}\label{class_peripherique_local_a017f86e371bad418585d28b97557248a}} 
+\index{Peripherique\+Local@{Peripherique\+Local}!recherche@{recherche}}
+\index{recherche@{recherche}!Peripherique\+Local@{Peripherique\+Local}}
+\paragraph{\texorpdfstring{recherche}{recherche}}
+{\footnotesize\ttfamily void Peripherique\+Local\+::recherche (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+
+
+Référencé par \hyperlink{class_peripherique_local_aa3b12b1c122605cf00b8ab48ed4284c1}{rechercher()}.
+
+\mbox{\Hypertarget{class_peripherique_local_aa3b12b1c122605cf00b8ab48ed4284c1}\label{class_peripherique_local_aa3b12b1c122605cf00b8ab48ed4284c1}} 
+\index{Peripherique\+Local@{Peripherique\+Local}!rechercher@{rechercher}}
+\index{rechercher@{rechercher}!Peripherique\+Local@{Peripherique\+Local}}
+\paragraph{\texorpdfstring{rechercher()}{rechercher()}}
+{\footnotesize\ttfamily void Peripherique\+Local\+::rechercher (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Active la recherche de périphérique Bluetooth. 
+
+Références \hyperlink{class_peripherique_local_a9e398b7dd89a20b1bee67b8c3467da69}{discovery\+Agent\+Device}, \hyperlink{class_peripherique_local_a6638c29f6f75c3b4d329d93ae6ea4a48}{etat\+Recherche}, \hyperlink{class_peripherique_local_a017f86e371bad418585d28b97557248a}{recherche()}, et \hyperlink{class_peripherique_local_af6f664b6af67f1c90eb017391ac812ed}{trottinette\+Detectee}.
+
+
+\begin{DoxyCode}
+00092 \{
+00093     qDebug() << Q\_FUNC\_INFO;
+00094     \hyperlink{class_peripherique_local_af6f664b6af67f1c90eb017391ac812ed}{trottinetteDetectee} = false ;
+00095     \hyperlink{class_peripherique_local_a6638c29f6f75c3b4d329d93ae6ea4a48}{etatRecherche} = \textcolor{keyword}{true};
+00096     \textcolor{keywordflow}{if}(\hyperlink{class_peripherique_local_a9e398b7dd89a20b1bee67b8c3467da69}{discoveryAgentDevice} != NULL)
+00097     \{
+00098         \hyperlink{class_peripherique_local_a9e398b7dd89a20b1bee67b8c3467da69}{discoveryAgentDevice}->start();
+00099         \textcolor{keywordflow}{if} (\hyperlink{class_peripherique_local_a9e398b7dd89a20b1bee67b8c3467da69}{discoveryAgentDevice}->isActive())
+00100         \{
+00101             emit \hyperlink{class_peripherique_local_a017f86e371bad418585d28b97557248a}{recherche}();
+00102         \}
+00103     \}
+00104 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_peripherique_local_a16add86080e72a5ce804ff9296e10415}\label{class_peripherique_local_a16add86080e72a5ce804ff9296e10415}} 
+\index{Peripherique\+Local@{Peripherique\+Local}!recherche\+Terminee@{recherche\+Terminee}}
+\index{recherche\+Terminee@{recherche\+Terminee}!Peripherique\+Local@{Peripherique\+Local}}
+\paragraph{\texorpdfstring{recherche\+Terminee}{rechercheTerminee}}
+{\footnotesize\ttfamily void Peripherique\+Local\+::recherche\+Terminee (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [slot]}}
+
+Est activée lorsque le discovery\+Agent\+Device a fini sa recherche et change l\textquotesingle{}état du booléen etat\+Recherche. 
+
+Références \hyperlink{class_peripherique_local_a05dad5bf82b579731591407a0c098957}{arret\+Recherche()}, et \hyperlink{class_peripherique_local_a6638c29f6f75c3b4d329d93ae6ea4a48}{etat\+Recherche}.
+
+
+
+Référencé par \hyperlink{class_peripherique_local_a99a652b8659a3692f164cf1a0382e4bf}{Peripherique\+Local()}.
+
+
+\begin{DoxyCode}
+00148 \{
+00149     qDebug() << Q\_FUNC\_INFO;
+00150     \hyperlink{class_peripherique_local_a6638c29f6f75c3b4d329d93ae6ea4a48}{etatRecherche} = false ;
+00151     emit \hyperlink{class_peripherique_local_a05dad5bf82b579731591407a0c098957}{arretRecherche}();
+00152 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_peripherique_local_ae4f8521445a9dc3a51ff116e1f6597d7}\label{class_peripherique_local_ae4f8521445a9dc3a51ff116e1f6597d7}} 
+\index{Peripherique\+Local@{Peripherique\+Local}!regler\+Chrono@{regler\+Chrono}}
+\index{regler\+Chrono@{regler\+Chrono}!Peripherique\+Local@{Peripherique\+Local}}
+\paragraph{\texorpdfstring{regler\+Chrono}{reglerChrono}}
+{\footnotesize\ttfamily void Peripherique\+Local\+::regler\+Chrono (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [slot]}}
+
+
+
+Références \hyperlink{class_peripherique_local_a150599c1ded2462eb0e2d1d943459a34}{arret\+Chrono()}, \hyperlink{class_peripherique_local_a8c29d255e41df4bc381f4ff2d1451416}{depart\+Chrono()}, et \hyperlink{chronometreutilisation_8h_ad0750d12e2f5f404ec458d4066a53fa4}{P\+E\+R\+I\+O\+DE}.
+
+
+
+Référencé par \hyperlink{class_peripherique_local_af2e7f023f8ed72ebc1d36e66c440ceca}{connecter()}.
+
+
+\begin{DoxyCode}
+00290 \{
+00291     \textcolor{comment}{// arrêt de l'horloge}
+00292     emit \hyperlink{class_peripherique_local_a150599c1ded2462eb0e2d1d943459a34}{arretChrono}();
+00293      \textcolor{comment}{// redémarrage de l'horloge}
+00294     emit \hyperlink{class_peripherique_local_a8c29d255e41df4bc381f4ff2d1451416}{departChrono}(\hyperlink{chronometreutilisation_8h_ad0750d12e2f5f404ec458d4066a53fa4}{PERIODE});
+00295 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_peripherique_local_adfe5bde79cfe1f585dbbdf21269ebe2b}\label{class_peripherique_local_adfe5bde79cfe1f585dbbdf21269ebe2b}} 
+\index{Peripherique\+Local@{Peripherique\+Local}!risque\+De\+Chute\+Change@{risque\+De\+Chute\+Change}}
+\index{risque\+De\+Chute\+Change@{risque\+De\+Chute\+Change}!Peripherique\+Local@{Peripherique\+Local}}
+\paragraph{\texorpdfstring{risque\+De\+Chute\+Change}{risqueDeChuteChange}}
+{\footnotesize\ttfamily void Peripherique\+Local\+::risque\+De\+Chute\+Change (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+\mbox{\Hypertarget{class_peripherique_local_a4c2e32ed7feda45c6347144a99be7525}\label{class_peripherique_local_a4c2e32ed7feda45c6347144a99be7525}} 
+\index{Peripherique\+Local@{Peripherique\+Local}!risque\+De\+Chute\+Update@{risque\+De\+Chute\+Update}}
+\index{risque\+De\+Chute\+Update@{risque\+De\+Chute\+Update}!Peripherique\+Local@{Peripherique\+Local}}
+\paragraph{\texorpdfstring{risque\+De\+Chute\+Update}{risqueDeChuteUpdate}}
+{\footnotesize\ttfamily void Peripherique\+Local\+::risque\+De\+Chute\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+
+
+Référencé par \hyperlink{class_peripherique_local_ac20ba20d69997e441b1b782f8b506291}{afficher\+Risque\+De\+Chute()}.
+
+\mbox{\Hypertarget{class_peripherique_local_a48840475209b5cabcf60e3176de63b92}\label{class_peripherique_local_a48840475209b5cabcf60e3176de63b92}} 
+\index{Peripherique\+Local@{Peripherique\+Local}!socket\+Ready\+Read@{socket\+Ready\+Read}}
+\index{socket\+Ready\+Read@{socket\+Ready\+Read}!Peripherique\+Local@{Peripherique\+Local}}
+\paragraph{\texorpdfstring{socket\+Ready\+Read}{socketReadyRead}}
+{\footnotesize\ttfamily void Peripherique\+Local\+::socket\+Ready\+Read (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [slot]}}
+
+Lorsque des données sont disponibles, les lit et émet un signal avec le contenu de la trame reçue. 
+
+Références \hyperlink{class_peripherique_local_a0058bf8367b4b8f907838b83a9150c07}{socket}, et \hyperlink{class_peripherique_local_af980614027f938565b318eb1dfd579c5}{trame\+Recue()}.
+
+
+
+Référencé par \hyperlink{class_peripherique_local_af2e7f023f8ed72ebc1d36e66c440ceca}{connecter()}.
+
+
+\begin{DoxyCode}
+00251 \{    
+00252     QByteArray donnees;
+00253 
+00254     \textcolor{keywordflow}{while} (\hyperlink{class_peripherique_local_a0058bf8367b4b8f907838b83a9150c07}{socket}->bytesAvailable())
+00255     \{
+00256         donnees += \hyperlink{class_peripherique_local_a0058bf8367b4b8f907838b83a9150c07}{socket}->readAll();
+00257         usleep(150000); \textcolor{comment}{// cf. timeout}
+00258     \}
+00259 
+00260     emit \hyperlink{class_peripherique_local_af980614027f938565b318eb1dfd579c5}{trameRecue}(QString(donnees));
+00261     qDebug() << Q\_FUNC\_INFO << QString(donnees);
+00262 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_peripherique_local_af980614027f938565b318eb1dfd579c5}\label{class_peripherique_local_af980614027f938565b318eb1dfd579c5}} 
+\index{Peripherique\+Local@{Peripherique\+Local}!trame\+Recue@{trame\+Recue}}
+\index{trame\+Recue@{trame\+Recue}!Peripherique\+Local@{Peripherique\+Local}}
+\paragraph{\texorpdfstring{trame\+Recue}{trameRecue}}
+{\footnotesize\ttfamily void Peripherique\+Local\+::trame\+Recue (\begin{DoxyParamCaption}\item[{Q\+String}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+
+
+Référencé par \hyperlink{class_peripherique_local_a99a652b8659a3692f164cf1a0382e4bf}{Peripherique\+Local()}, et \hyperlink{class_peripherique_local_a48840475209b5cabcf60e3176de63b92}{socket\+Ready\+Read()}.
+
+\mbox{\Hypertarget{class_peripherique_local_ad6e76380e6c9f48c36a10ac4af2c3d96}\label{class_peripherique_local_ad6e76380e6c9f48c36a10ac4af2c3d96}} 
+\index{Peripherique\+Local@{Peripherique\+Local}!trottinette\+Connectee@{trottinette\+Connectee}}
+\index{trottinette\+Connectee@{trottinette\+Connectee}!Peripherique\+Local@{Peripherique\+Local}}
+\paragraph{\texorpdfstring{trottinette\+Connectee}{trottinetteConnectee}}
+{\footnotesize\ttfamily void Peripherique\+Local\+::trottinette\+Connectee (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [slot]}}
+
+Change l\textquotesingle{}état du booléen etat\+Connexion lorsque la liaison entre la trottinette et le terminal mobile est effectué 
+
+Références \hyperlink{class_peripherique_local_a7495daea266cb24dec35d85c651bd4c5}{connecte()}, \hyperlink{class_peripherique_local_a5359e5a94b32b8a90c06ec999de13d2c}{etat\+Connexion}, et \hyperlink{class_peripherique_local_a6638c29f6f75c3b4d329d93ae6ea4a48}{etat\+Recherche}.
+
+
+
+Référencé par \hyperlink{class_peripherique_local_af2e7f023f8ed72ebc1d36e66c440ceca}{connecter()}.
+
+
+\begin{DoxyCode}
+00223 \{
+00224     \hyperlink{class_peripherique_local_a5359e5a94b32b8a90c06ec999de13d2c}{etatConnexion} = \textcolor{keyword}{true};
+00225     \hyperlink{class_peripherique_local_a6638c29f6f75c3b4d329d93ae6ea4a48}{etatRecherche}= \textcolor{keyword}{false};
+00226     emit \hyperlink{class_peripherique_local_a7495daea266cb24dec35d85c651bd4c5}{connecte}();
+00227 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_peripherique_local_ab081485bf0f9403d9e7fc5f0407cdc5c}\label{class_peripherique_local_ab081485bf0f9403d9e7fc5f0407cdc5c}} 
+\index{Peripherique\+Local@{Peripherique\+Local}!trottinette\+Deconnectee@{trottinette\+Deconnectee}}
+\index{trottinette\+Deconnectee@{trottinette\+Deconnectee}!Peripherique\+Local@{Peripherique\+Local}}
+\paragraph{\texorpdfstring{trottinette\+Deconnectee}{trottinetteDeconnectee}}
+{\footnotesize\ttfamily void Peripherique\+Local\+::trottinette\+Deconnectee (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [slot]}}
+
+Change l\textquotesingle{}état du booléen etat\+Connexion lorsque la liaison entre la trottinette et le terminal mobile se termine. 
+
+Références \hyperlink{class_peripherique_local_a150599c1ded2462eb0e2d1d943459a34}{arret\+Chrono()}, \hyperlink{class_peripherique_local_a2a8f0b072821f6d76db20b6f73b6acd0}{deconnecte()}, \hyperlink{class_peripherique_local_a5359e5a94b32b8a90c06ec999de13d2c}{etat\+Connexion}, et \hyperlink{class_peripherique_local_a6638c29f6f75c3b4d329d93ae6ea4a48}{etat\+Recherche}.
+
+
+
+Référencé par \hyperlink{class_peripherique_local_af2e7f023f8ed72ebc1d36e66c440ceca}{connecter()}.
+
+
+\begin{DoxyCode}
+00236 \{
+00237     \hyperlink{class_peripherique_local_a5359e5a94b32b8a90c06ec999de13d2c}{etatConnexion} = \textcolor{keyword}{false};
+00238     \hyperlink{class_peripherique_local_a6638c29f6f75c3b4d329d93ae6ea4a48}{etatRecherche} = \textcolor{keyword}{false};
+00239     emit \hyperlink{class_peripherique_local_a150599c1ded2462eb0e2d1d943459a34}{arretChrono}();
+00240     emit \hyperlink{class_peripherique_local_a2a8f0b072821f6d76db20b6f73b6acd0}{deconnecte}();
+00241     qDebug() << Q\_FUNC\_INFO ;
+00242 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_peripherique_local_ad388116a3ad558055dcf02fa854ab361}\label{class_peripherique_local_ad388116a3ad558055dcf02fa854ab361}} 
+\index{Peripherique\+Local@{Peripherique\+Local}!trottinette\+Trouvee@{trottinette\+Trouvee}}
+\index{trottinette\+Trouvee@{trottinette\+Trouvee}!Peripherique\+Local@{Peripherique\+Local}}
+\paragraph{\texorpdfstring{trottinette\+Trouvee}{trottinetteTrouvee}}
+{\footnotesize\ttfamily void Peripherique\+Local\+::trottinette\+Trouvee (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+
+
+Référencé par \hyperlink{class_peripherique_local_aab3b5a9b584b0191b9f690add1cfa6ed}{identifier\+Trottinette()}.
+
+\mbox{\Hypertarget{class_peripherique_local_af93a0559c563c2a9489a6c78468af6f1}\label{class_peripherique_local_af93a0559c563c2a9489a6c78468af6f1}} 
+\index{Peripherique\+Local@{Peripherique\+Local}!trottinette\+Update@{trottinette\+Update}}
+\index{trottinette\+Update@{trottinette\+Update}!Peripherique\+Local@{Peripherique\+Local}}
+\paragraph{\texorpdfstring{trottinette\+Update}{trottinetteUpdate}}
+{\footnotesize\ttfamily void Peripherique\+Local\+::trottinette\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+
+
+Référencé par \hyperlink{class_peripherique_local_a5702930929fea3e197fc1938a2303961}{afficher\+Donnees\+Trottinette()}.
+
+\mbox{\Hypertarget{class_peripherique_local_ae00597ad0acf0c5bed53e0b4d216214c}\label{class_peripherique_local_ae00597ad0acf0c5bed53e0b4d216214c}} 
+\index{Peripherique\+Local@{Peripherique\+Local}!vitesse\+Change@{vitesse\+Change}}
+\index{vitesse\+Change@{vitesse\+Change}!Peripherique\+Local@{Peripherique\+Local}}
+\paragraph{\texorpdfstring{vitesse\+Change}{vitesseChange}}
+{\footnotesize\ttfamily void Peripherique\+Local\+::vitesse\+Change (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+
+
+\subsubsection{Documentation des données membres}
+\mbox{\Hypertarget{class_peripherique_local_a89e0515901920b03e83066cf306f7f14}\label{class_peripherique_local_a89e0515901920b03e83066cf306f7f14}} 
+\index{Peripherique\+Local@{Peripherique\+Local}!chronometre\+Utilisation@{chronometre\+Utilisation}}
+\index{chronometre\+Utilisation@{chronometre\+Utilisation}!Peripherique\+Local@{Peripherique\+Local}}
+\paragraph{\texorpdfstring{chronometre\+Utilisation}{chronometreUtilisation}}
+{\footnotesize\ttfamily \hyperlink{class_chronometre_utilisation}{Chronometre\+Utilisation}$\ast$ Peripherique\+Local\+::chronometre\+Utilisation\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_peripherique_local_a99a652b8659a3692f164cf1a0382e4bf}{Peripherique\+Local()}.
+
+\mbox{\Hypertarget{class_peripherique_local_a9e398b7dd89a20b1bee67b8c3467da69}\label{class_peripherique_local_a9e398b7dd89a20b1bee67b8c3467da69}} 
+\index{Peripherique\+Local@{Peripherique\+Local}!discovery\+Agent\+Device@{discovery\+Agent\+Device}}
+\index{discovery\+Agent\+Device@{discovery\+Agent\+Device}!Peripherique\+Local@{Peripherique\+Local}}
+\paragraph{\texorpdfstring{discovery\+Agent\+Device}{discoveryAgentDevice}}
+{\footnotesize\ttfamily Q\+Bluetooth\+Device\+Discovery\+Agent$\ast$ Peripherique\+Local\+::discovery\+Agent\+Device\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_peripherique_local_afbbb6d37b616cc4579486c3b1ce700b2}{arreter()}, \hyperlink{class_peripherique_local_aab3b5a9b584b0191b9f690add1cfa6ed}{identifier\+Trottinette()}, \hyperlink{class_peripherique_local_a99a652b8659a3692f164cf1a0382e4bf}{Peripherique\+Local()}, et \hyperlink{class_peripherique_local_aa3b12b1c122605cf00b8ab48ed4284c1}{rechercher()}.
+
+\mbox{\Hypertarget{class_peripherique_local_a0058bf8367b4b8f907838b83a9150c07}\label{class_peripherique_local_a0058bf8367b4b8f907838b83a9150c07}} 
+\index{Peripherique\+Local@{Peripherique\+Local}!socket@{socket}}
+\index{socket@{socket}!Peripherique\+Local@{Peripherique\+Local}}
+\paragraph{\texorpdfstring{socket}{socket}}
+{\footnotesize\ttfamily Q\+Bluetooth\+Socket$\ast$ Peripherique\+Local\+::socket\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_peripherique_local_af2e7f023f8ed72ebc1d36e66c440ceca}{connecter()}, et \hyperlink{class_peripherique_local_a48840475209b5cabcf60e3176de63b92}{socket\+Ready\+Read()}.
+
+\mbox{\Hypertarget{class_peripherique_local_a515044c46ba91db8d0b29362226860aa}\label{class_peripherique_local_a515044c46ba91db8d0b29362226860aa}} 
+\index{Peripherique\+Local@{Peripherique\+Local}!terminal\+Mobile@{terminal\+Mobile}}
+\index{terminal\+Mobile@{terminal\+Mobile}!Peripherique\+Local@{Peripherique\+Local}}
+\paragraph{\texorpdfstring{terminal\+Mobile}{terminalMobile}}
+{\footnotesize\ttfamily Q\+Bluetooth\+Local\+Device Peripherique\+Local\+::terminal\+Mobile\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_peripherique_local_a99a652b8659a3692f164cf1a0382e4bf}{Peripherique\+Local()}.
+
+\mbox{\Hypertarget{class_peripherique_local_a3c96dbda4eacf235c2bb0cabaa742122}\label{class_peripherique_local_a3c96dbda4eacf235c2bb0cabaa742122}} 
+\index{Peripherique\+Local@{Peripherique\+Local}!trame@{trame}}
+\index{trame@{trame}!Peripherique\+Local@{Peripherique\+Local}}
+\paragraph{\texorpdfstring{trame}{trame}}
+{\footnotesize\ttfamily \hyperlink{class_trame}{Trame}$\ast$ Peripherique\+Local\+::trame\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_peripherique_local_a99a652b8659a3692f164cf1a0382e4bf}{Peripherique\+Local()}.
+
+\mbox{\Hypertarget{class_peripherique_local_aa110b2c3292270553f592362e45f710b}\label{class_peripherique_local_aa110b2c3292270553f592362e45f710b}} 
+\index{Peripherique\+Local@{Peripherique\+Local}!trottinette@{trottinette}}
+\index{trottinette@{trottinette}!Peripherique\+Local@{Peripherique\+Local}}
+\paragraph{\texorpdfstring{trottinette}{trottinette}}
+{\footnotesize\ttfamily \hyperlink{class_trottinette}{Trottinette}$\ast$ Peripherique\+Local\+::trottinette\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_peripherique_local_a465658a204541e309f2647d473f658d8}{get\+Trottinette\+Adresse\+Mac()}, \hyperlink{class_peripherique_local_ac81a942b4d1d9e848649073c53ed6917}{get\+Trottinette\+Nom()}, et \hyperlink{class_peripherique_local_aab3b5a9b584b0191b9f690add1cfa6ed}{identifier\+Trottinette()}.
+
+
+
+\subsubsection{Documentation des propriétés}
+\mbox{\Hypertarget{class_peripherique_local_a76ccdcef703e7aff1f6f66dc615feba7}\label{class_peripherique_local_a76ccdcef703e7aff1f6f66dc615feba7}} 
+\index{Peripherique\+Local@{Peripherique\+Local}!adresse\+M\+AC@{adresse\+M\+AC}}
+\index{adresse\+M\+AC@{adresse\+M\+AC}!Peripherique\+Local@{Peripherique\+Local}}
+\paragraph{\texorpdfstring{adresse\+M\+AC}{adresseMAC}}
+{\footnotesize\ttfamily Q\+String Peripherique\+Local\+::adresse\+M\+AC}
+
+
+
+Référencé par \hyperlink{class_peripherique_local_a79ce44141050f589d17f119a3b17444c}{get\+Adresse\+M\+A\+C()}, et \hyperlink{class_peripherique_local_a99a652b8659a3692f164cf1a0382e4bf}{Peripherique\+Local()}.
+
+\mbox{\Hypertarget{class_peripherique_local_a7feac59a6fbe481321aa1734d13f05c2}\label{class_peripherique_local_a7feac59a6fbe481321aa1734d13f05c2}} 
+\index{Peripherique\+Local@{Peripherique\+Local}!batterie\+Trottinette@{batterie\+Trottinette}}
+\index{batterie\+Trottinette@{batterie\+Trottinette}!Peripherique\+Local@{Peripherique\+Local}}
+\paragraph{\texorpdfstring{batterie\+Trottinette}{batterieTrottinette}}
+{\footnotesize\ttfamily Q\+String Peripherique\+Local\+::batterie\+Trottinette}
+
+
+
+Référencé par \hyperlink{class_peripherique_local_a5702930929fea3e197fc1938a2303961}{afficher\+Donnees\+Trottinette()}.
+
+\mbox{\Hypertarget{class_peripherique_local_a8b994159d5d56a45b693b191963d5053}\label{class_peripherique_local_a8b994159d5d56a45b693b191963d5053}} 
+\index{Peripherique\+Local@{Peripherique\+Local}!chrono@{chrono}}
+\index{chrono@{chrono}!Peripherique\+Local@{Peripherique\+Local}}
+\paragraph{\texorpdfstring{chrono}{chrono}}
+{\footnotesize\ttfamily Q\+String Peripherique\+Local\+::chrono}
+
+
+
+Référencé par \hyperlink{class_peripherique_local_af567be15ff8eb2a00cb4e0674ebf3004}{afficher\+Chrono()}.
+
+\mbox{\Hypertarget{class_peripherique_local_ad0e396b67eed256a7f27277ca7bfafdd}\label{class_peripherique_local_ad0e396b67eed256a7f27277ca7bfafdd}} 
+\index{Peripherique\+Local@{Peripherique\+Local}!connexion\+Erreur@{connexion\+Erreur}}
+\index{connexion\+Erreur@{connexion\+Erreur}!Peripherique\+Local@{Peripherique\+Local}}
+\paragraph{\texorpdfstring{connexion\+Erreur}{connexionErreur}}
+{\footnotesize\ttfamily bool Peripherique\+Local\+::connexion\+Erreur}
+
+\mbox{\Hypertarget{class_peripherique_local_a6b583dc9b350baf3edcc0cbc1611a6c5}\label{class_peripherique_local_a6b583dc9b350baf3edcc0cbc1611a6c5}} 
+\index{Peripherique\+Local@{Peripherique\+Local}!distance\+Parcourue\+Trottinette@{distance\+Parcourue\+Trottinette}}
+\index{distance\+Parcourue\+Trottinette@{distance\+Parcourue\+Trottinette}!Peripherique\+Local@{Peripherique\+Local}}
+\paragraph{\texorpdfstring{distance\+Parcourue\+Trottinette}{distanceParcourueTrottinette}}
+{\footnotesize\ttfamily Q\+String Peripherique\+Local\+::distance\+Parcourue\+Trottinette}
+
+
+
+Référencé par \hyperlink{class_peripherique_local_a5702930929fea3e197fc1938a2303961}{afficher\+Donnees\+Trottinette()}.
+
+\mbox{\Hypertarget{class_peripherique_local_a5359e5a94b32b8a90c06ec999de13d2c}\label{class_peripherique_local_a5359e5a94b32b8a90c06ec999de13d2c}} 
+\index{Peripherique\+Local@{Peripherique\+Local}!etat\+Connexion@{etat\+Connexion}}
+\index{etat\+Connexion@{etat\+Connexion}!Peripherique\+Local@{Peripherique\+Local}}
+\paragraph{\texorpdfstring{etat\+Connexion}{etatConnexion}}
+{\footnotesize\ttfamily bool Peripherique\+Local\+::etat\+Connexion}
+
+
+
+Référencé par \hyperlink{class_peripherique_local_af2e7f023f8ed72ebc1d36e66c440ceca}{connecter()}, \hyperlink{class_peripherique_local_abb86db4a2a3d72a5de32253aa9af1ce8}{erreur\+Connexion()}, \hyperlink{class_peripherique_local_ad6e76380e6c9f48c36a10ac4af2c3d96}{trottinette\+Connectee()}, et \hyperlink{class_peripherique_local_ab081485bf0f9403d9e7fc5f0407cdc5c}{trottinette\+Deconnectee()}.
+
+\mbox{\Hypertarget{class_peripherique_local_a6638c29f6f75c3b4d329d93ae6ea4a48}\label{class_peripherique_local_a6638c29f6f75c3b4d329d93ae6ea4a48}} 
+\index{Peripherique\+Local@{Peripherique\+Local}!etat\+Recherche@{etat\+Recherche}}
+\index{etat\+Recherche@{etat\+Recherche}!Peripherique\+Local@{Peripherique\+Local}}
+\paragraph{\texorpdfstring{etat\+Recherche}{etatRecherche}}
+{\footnotesize\ttfamily bool Peripherique\+Local\+::etat\+Recherche}
+
+
+
+Référencé par \hyperlink{class_peripherique_local_afbbb6d37b616cc4579486c3b1ce700b2}{arreter()}, \hyperlink{class_peripherique_local_aa3b12b1c122605cf00b8ab48ed4284c1}{rechercher()}, \hyperlink{class_peripherique_local_a16add86080e72a5ce804ff9296e10415}{recherche\+Terminee()}, \hyperlink{class_peripherique_local_ad6e76380e6c9f48c36a10ac4af2c3d96}{trottinette\+Connectee()}, et \hyperlink{class_peripherique_local_ab081485bf0f9403d9e7fc5f0407cdc5c}{trottinette\+Deconnectee()}.
+
+\mbox{\Hypertarget{class_peripherique_local_ab85a254ce801dcdebd6be972aea0638b}\label{class_peripherique_local_ab85a254ce801dcdebd6be972aea0638b}} 
+\index{Peripherique\+Local@{Peripherique\+Local}!inclinaison\+Trottinette@{inclinaison\+Trottinette}}
+\index{inclinaison\+Trottinette@{inclinaison\+Trottinette}!Peripherique\+Local@{Peripherique\+Local}}
+\paragraph{\texorpdfstring{inclinaison\+Trottinette}{inclinaisonTrottinette}}
+{\footnotesize\ttfamily Q\+String Peripherique\+Local\+::inclinaison\+Trottinette}
+
+
+
+Référencé par \hyperlink{class_peripherique_local_a5702930929fea3e197fc1938a2303961}{afficher\+Donnees\+Trottinette()}.
+
+\mbox{\Hypertarget{class_peripherique_local_a16dcebf91bf74b8e3f1c2d90b77dda29}\label{class_peripherique_local_a16dcebf91bf74b8e3f1c2d90b77dda29}} 
+\index{Peripherique\+Local@{Peripherique\+Local}!nom@{nom}}
+\index{nom@{nom}!Peripherique\+Local@{Peripherique\+Local}}
+\paragraph{\texorpdfstring{nom}{nom}}
+{\footnotesize\ttfamily Q\+String Peripherique\+Local\+::nom}
+
+
+
+Référencé par \hyperlink{class_peripherique_local_af105d458828fbb17e5b556e23d7d7b42}{get\+Nom()}, et \hyperlink{class_peripherique_local_a99a652b8659a3692f164cf1a0382e4bf}{Peripherique\+Local()}.
+
+\mbox{\Hypertarget{class_peripherique_local_a79a43778c2db1c9c70784b6329dc383e}\label{class_peripherique_local_a79a43778c2db1c9c70784b6329dc383e}} 
+\index{Peripherique\+Local@{Peripherique\+Local}!risque\+De\+Chute@{risque\+De\+Chute}}
+\index{risque\+De\+Chute@{risque\+De\+Chute}!Peripherique\+Local@{Peripherique\+Local}}
+\paragraph{\texorpdfstring{risque\+De\+Chute}{risqueDeChute}}
+{\footnotesize\ttfamily Q\+String Peripherique\+Local\+::risque\+De\+Chute}
+
+
+
+Référencé par \hyperlink{class_peripherique_local_ac20ba20d69997e441b1b782f8b506291}{afficher\+Risque\+De\+Chute()}, et \hyperlink{class_peripherique_local_a99a652b8659a3692f164cf1a0382e4bf}{Peripherique\+Local()}.
+
+\mbox{\Hypertarget{class_peripherique_local_af6f664b6af67f1c90eb017391ac812ed}\label{class_peripherique_local_af6f664b6af67f1c90eb017391ac812ed}} 
+\index{Peripherique\+Local@{Peripherique\+Local}!trottinette\+Detectee@{trottinette\+Detectee}}
+\index{trottinette\+Detectee@{trottinette\+Detectee}!Peripherique\+Local@{Peripherique\+Local}}
+\paragraph{\texorpdfstring{trottinette\+Detectee}{trottinetteDetectee}}
+{\footnotesize\ttfamily bool Peripherique\+Local\+::trottinette\+Detectee}
+
+
+
+Référencé par \hyperlink{class_peripherique_local_af2e7f023f8ed72ebc1d36e66c440ceca}{connecter()}, \hyperlink{class_peripherique_local_aab3b5a9b584b0191b9f690add1cfa6ed}{identifier\+Trottinette()}, et \hyperlink{class_peripherique_local_aa3b12b1c122605cf00b8ab48ed4284c1}{rechercher()}.
+
+\mbox{\Hypertarget{class_peripherique_local_aa0a0ebf6468e8a2c3a15828122ee830a}\label{class_peripherique_local_aa0a0ebf6468e8a2c3a15828122ee830a}} 
+\index{Peripherique\+Local@{Peripherique\+Local}!vitesse\+Trottinette@{vitesse\+Trottinette}}
+\index{vitesse\+Trottinette@{vitesse\+Trottinette}!Peripherique\+Local@{Peripherique\+Local}}
+\paragraph{\texorpdfstring{vitesse\+Trottinette}{vitesseTrottinette}}
+{\footnotesize\ttfamily Q\+String Peripherique\+Local\+::vitesse\+Trottinette}
+
+
+
+Référencé par \hyperlink{class_peripherique_local_a5702930929fea3e197fc1938a2303961}{afficher\+Donnees\+Trottinette()}.
+
+
+
+La documentation de cette classe a été générée à partir des fichiers suivants \+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{peripheriquelocal_8h}{peripheriquelocal.\+h}\item 
+\hyperlink{peripheriquelocal_8cpp}{peripheriquelocal.\+cpp}\end{DoxyCompactItemize}

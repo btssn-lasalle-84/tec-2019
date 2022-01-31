@@ -1,0 +1,103 @@
+\hypertarget{peripheriquelocal_8h_source}{}\subsection{peripheriquelocal.\+h}
+\label{peripheriquelocal_8h_source}\index{peripheriquelocal.\+h@{peripheriquelocal.\+h}}
+
+\begin{DoxyCode}
+00001 \textcolor{preprocessor}{#ifndef PERIPHERIQUELOCAL\_H}
+00002 \textcolor{preprocessor}{#define PERIPHERIQUELOCAL\_H}
+00003 
+00004 \textcolor{preprocessor}{#include <QObject>}
+00005 \textcolor{preprocessor}{#include <QBluetoothLocalDevice>}
+00006 \textcolor{preprocessor}{#include <QBluetoothAddress>}
+00007 \textcolor{preprocessor}{#include <QBluetoothUuid>}
+00008 \textcolor{preprocessor}{#include <QBluetoothSocket>}
+00009 \textcolor{preprocessor}{#include <QBluetoothDeviceInfo>}
+00010 \textcolor{preprocessor}{#include <QBluetoothServiceInfo>}
+00011 \textcolor{preprocessor}{#include <QBluetoothDeviceDiscoveryAgent>}
+00012 \textcolor{preprocessor}{#include "\hyperlink{trottinette_8h}{trottinette.h}"}
+00013 \textcolor{preprocessor}{#include "\hyperlink{trame_8h}{trame.h}"}
+00014 \textcolor{preprocessor}{#include "\hyperlink{chronometreutilisation_8h}{chronometreutilisation.h}"}
+00015 
+\Hypertarget{peripheriquelocal_8h_source_l00040}\hyperlink{class_peripherique_local}{00040} \textcolor{keyword}{class }\hyperlink{class_peripherique_local}{PeripheriqueLocal} : \textcolor{keyword}{public} QObject
+00041 \{
+00042     Q\_OBJECT
+00043 
+\Hypertarget{peripheriquelocal_8h_source_l00044}\hyperlink{class_peripherique_local_a16dcebf91bf74b8e3f1c2d90b77dda29}{00044}     Q\_PROPERTY(QString nom MEMBER nom NOTIFY trottinetteTrouvee)
+\Hypertarget{peripheriquelocal_8h_source_l00045}\hyperlink{class_peripherique_local_a76ccdcef703e7aff1f6f66dc615feba7}{00045}     Q\_PROPERTY(QString adresseMAC MEMBER adresseMAC NOTIFY trottinetteTrouvee)
+\Hypertarget{peripheriquelocal_8h_source_l00046}\hyperlink{class_peripherique_local_a7feac59a6fbe481321aa1734d13f05c2}{00046}     Q\_PROPERTY(QString batterieTrottinette MEMBER batterieTrottinette NOTIFY batterieChange)
+\Hypertarget{peripheriquelocal_8h_source_l00047}\hyperlink{class_peripherique_local_aa0a0ebf6468e8a2c3a15828122ee830a}{00047}     Q\_PROPERTY(QString vitesseTrottinette MEMBER vitesseTrottinette NOTIFY vitesseChange)
+\Hypertarget{peripheriquelocal_8h_source_l00048}\hyperlink{class_peripherique_local_ab85a254ce801dcdebd6be972aea0638b}{00048}     Q\_PROPERTY(QString inclinaisonTrottinette MEMBER inclinaisonTrottinette NOTIFY inclinaisonChange)
+\Hypertarget{peripheriquelocal_8h_source_l00049}\hyperlink{class_peripherique_local_a6b583dc9b350baf3edcc0cbc1611a6c5}{00049}     Q\_PROPERTY(QString distanceParcourueTrottinette MEMBER distanceParcourueTrottinette NOTIFY 
+      distanceParcourueChange)
+\Hypertarget{peripheriquelocal_8h_source_l00050}\hyperlink{class_peripherique_local_a79a43778c2db1c9c70784b6329dc383e}{00050}     Q\_PROPERTY(QString risqueDeChute MEMBER risqueDeChute NOTIFY risqueDeChuteChange)
+\Hypertarget{peripheriquelocal_8h_source_l00051}\hyperlink{class_peripherique_local_af6f664b6af67f1c90eb017391ac812ed}{00051}     Q\_PROPERTY(\textcolor{keywordtype}{bool} trottinetteDetectee MEMBER trottinetteDetectee NOTIFY trottinetteTrouvee)
+\Hypertarget{peripheriquelocal_8h_source_l00052}\hyperlink{class_peripherique_local_a6638c29f6f75c3b4d329d93ae6ea4a48}{00052}     Q\_PROPERTY(\textcolor{keywordtype}{bool} etatRecherche MEMBER etatRecherche NOTIFY recherche)
+\Hypertarget{peripheriquelocal_8h_source_l00053}\hyperlink{class_peripherique_local_a5359e5a94b32b8a90c06ec999de13d2c}{00053}     Q\_PROPERTY(\textcolor{keywordtype}{bool} etatConnexion MEMBER etatConnexion NOTIFY connecte)
+\Hypertarget{peripheriquelocal_8h_source_l00054}\hyperlink{class_peripherique_local_ad0e396b67eed256a7f27277ca7bfafdd}{00054}     Q\_PROPERTY(\textcolor{keywordtype}{bool} connexionErreur MEMBER connexionErreur NOTIFY erreur)
+\Hypertarget{peripheriquelocal_8h_source_l00055}\hyperlink{class_peripherique_local_a8b994159d5d56a45b693b191963d5053}{00055}     Q\_PROPERTY(QString chrono MEMBER chrono NOTIFY chronoChange)
+00056 
+00057 public:
+00058     explicit \hyperlink{class_peripherique_local}{PeripheriqueLocal}(QObject *parent = \textcolor{keywordtype}{nullptr}); 
+00059     Q\_INVOKABLE \textcolor{keywordtype}{void} rechercher(); 
+00060     Q\_INVOKABLE \textcolor{keywordtype}{void} arreter();
+00061     Q\_INVOKABLE QString getTrottinetteAdresseMac(); 
+00062     Q\_INVOKABLE QString getTrottinetteNom(); 
+00063     Q\_INVOKABLE \textcolor{keywordtype}{void} connecter();
+00064     QString getNom();
+00065     QString getAdresseMAC();
+00066 
+00067 private:
+\Hypertarget{peripheriquelocal_8h_source_l00068}\hyperlink{class_peripherique_local_aa110b2c3292270553f592362e45f710b}{00068}     \hyperlink{class_trottinette}{Trottinette}* trottinette; 
+\Hypertarget{peripheriquelocal_8h_source_l00069}\hyperlink{class_peripherique_local_a3c96dbda4eacf235c2bb0cabaa742122}{00069}     \hyperlink{class_trame}{Trame}* trame; 
+\Hypertarget{peripheriquelocal_8h_source_l00070}\hyperlink{class_peripherique_local_a89e0515901920b03e83066cf306f7f14}{00070}     \hyperlink{class_chronometre_utilisation}{ChronometreUtilisation} *chronometreUtilisation; 
+00071     QString nom; 
+00072     QString adresseMAC; 
+00073     QString vitesseTrottinette; 
+00074     QString inclinaisonTrottinette; 
+00075     QString batterieTrottinette; 
+00076     QString distanceParcourueTrottinette; 
+00077     QString chrono; 
+00078     QString risqueDeChute;
+\Hypertarget{peripheriquelocal_8h_source_l00079}\hyperlink{class_peripherique_local_a515044c46ba91db8d0b29362226860aa}{00079}     QBluetoothLocalDevice terminalMobile; 
+\Hypertarget{peripheriquelocal_8h_source_l00080}\hyperlink{class_peripherique_local_a9e398b7dd89a20b1bee67b8c3467da69}{00080}     QBluetoothDeviceDiscoveryAgent* discoveryAgentDevice; 
+\Hypertarget{peripheriquelocal_8h_source_l00081}\hyperlink{class_peripherique_local_a0058bf8367b4b8f907838b83a9150c07}{00081}     QBluetoothSocket *socket; 
+00082     \textcolor{keywordtype}{bool} etatConnexion; 
+00083     \textcolor{keywordtype}{bool} etatRecherche; 
+00084     \textcolor{keywordtype}{bool} connexionErreur; 
+00085     \textcolor{keywordtype}{bool} trottinetteDetectee; 
+00086 
+00087 protected slots:
+00088     \textcolor{comment}{// recherche}
+00089     \textcolor{keywordtype}{void} \hyperlink{class_peripherique_local_aab3b5a9b584b0191b9f690add1cfa6ed}{identifierTrottinette}(const QBluetoothDeviceInfo &info); 
+00090     \textcolor{keywordtype}{void} trottinetteConnectee(); 
+00091     \textcolor{keywordtype}{void} trottinetteDeconnectee(); 
+00092     \textcolor{keywordtype}{void} \hyperlink{class_peripherique_local_abb86db4a2a3d72a5de32253aa9af1ce8}{erreurConnexion}(QBluetoothSocket::SocketError error); 
+00093     \textcolor{keywordtype}{void} rechercheTerminee(); 
+00094     \textcolor{keywordtype}{void} socketReadyRead(); 
+00095     \textcolor{keywordtype}{void} \hyperlink{class_peripherique_local_a5702930929fea3e197fc1938a2303961}{afficherDonneesTrottinette}(QString , QString , QString , QString); 
+00096     \textcolor{keywordtype}{void} reglerChrono(); 
+00097     \textcolor{keywordtype}{void} \hyperlink{class_peripherique_local_af567be15ff8eb2a00cb4e0674ebf3004}{afficherChrono}(QString); 
+00098     \textcolor{keywordtype}{void} \hyperlink{class_peripherique_local_ac20ba20d69997e441b1b782f8b506291}{afficherRisqueDeChute}(QString);
+00099 
+00100 signals:
+00101     \textcolor{keywordtype}{void} connecte(); 
+00102     \textcolor{keywordtype}{void} deconnecte(); 
+00103     \textcolor{keywordtype}{void} recherche(); 
+00104     \textcolor{keywordtype}{void} erreur(); 
+00105     \textcolor{keywordtype}{void} trottinetteTrouvee(); 
+00106     \textcolor{keywordtype}{void} arretRecherche(); 
+00107     \textcolor{keywordtype}{void} \hyperlink{class_peripherique_local_af980614027f938565b318eb1dfd579c5}{trameRecue}(QString ); 
+00108     \textcolor{keywordtype}{void} vitesseChange();
+00109     \textcolor{keywordtype}{void} batterieChange(); 
+00110     \textcolor{keywordtype}{void} inclinaisonChange();
+00111     \textcolor{keywordtype}{void} distanceParcourueChange();
+00112     \textcolor{keywordtype}{void} trottinetteUpdate();
+00113     \textcolor{keywordtype}{void} \hyperlink{class_peripherique_local_a8c29d255e41df4bc381f4ff2d1451416}{departChrono}(\textcolor{keywordtype}{int}); 
+00114     \textcolor{keywordtype}{void} arretChrono(); 
+00115     \textcolor{keywordtype}{void} chronoChange(); 
+00116     \textcolor{keywordtype}{void} chronoUpdated();
+00117     \textcolor{keywordtype}{void} risqueDeChuteChange();
+00118     \textcolor{keywordtype}{void} risqueDeChuteUpdate();
+00119 \};
+00120 
+00121 \textcolor{preprocessor}{#endif // PERIPHERIQUELOCAL\_H}
+\end{DoxyCode}

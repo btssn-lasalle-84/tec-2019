@@ -1,0 +1,4 @@
+<map id="Application" name="Application">
+<area shape="rect" id="node2" href="$class_page_carte.html" title="La page de navigation (Carte et/ou Télémétrie) " alt="" coords="5,5,193,273"/>
+<area shape="rect" id="node3" href="$class_page_accueil.html" title="La page d&#39;accueil de l&#39;application. " alt="" coords="217,20,424,259"/>
+</map>

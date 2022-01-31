@@ -1,0 +1,68 @@
+\hypertarget{main_8cpp}{}\subsection{Référence du fichier main.\+cpp}
+\label{main_8cpp}\index{main.\+cpp@{main.\+cpp}}
+
+
+Programme principal.  
+
+
+{\ttfamily \#include $<$Q\+Gui\+Application$>$}\newline
+{\ttfamily \#include $<$Q\+Qml\+Application\+Engine$>$}\newline
+{\ttfamily \#include $<$Q\+Qml\+Context$>$}\newline
+{\ttfamily \#include $<$Q\+Quick\+Style$>$}\newline
+{\ttfamily \#include $<$Q\+Icon$>$}\newline
+{\ttfamily \#include $<$Q\+Debug$>$}\newline
+{\ttfamily \#include \char`\"{}peripheriquelocal.\+h\char`\"{}}\newline
+\subsubsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{main_8cpp_ae0665038b72011f5c680c660fcb59459}{main} (int argc, char $\ast$argv\mbox{[}$\,$\mbox{]})
+\end{DoxyCompactItemize}
+
+
+\subsubsection{Description détaillée}
+Crée et affiche la fenêtre principale de l\textquotesingle{}application
+
+\begin{DoxyAuthor}{Auteur}
+Somphon Sy
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+1 
+\end{DoxyVersion}
+
+
+\subsubsection{Documentation des fonctions}
+\mbox{\Hypertarget{main_8cpp_ae0665038b72011f5c680c660fcb59459}\label{main_8cpp_ae0665038b72011f5c680c660fcb59459}} 
+\index{main.\+cpp@{main.\+cpp}!main@{main}}
+\index{main@{main}!main.\+cpp@{main.\+cpp}}
+\paragraph{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily main (\begin{DoxyParamCaption}\item[{int}]{argc,  }\item[{char $\ast$}]{argv\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Paramètres}
+{\em argc} & \\
+\hline
+{\em argv\mbox{[}$\,$\mbox{]}} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+int 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+00028 \{
+00029     QCoreApplication::setAttribute(Qt::AA\_EnableHighDpiScaling);
+00030     QGuiApplication app(argc, argv);
+00031     QQmlApplicationEngine engine;
+00032 
+00033     QQuickStyle::setStyle(\textcolor{stringliteral}{"Material"}); \textcolor{comment}{// ("Default", "Fusion", "Imagine", "Material", "Universal")}
+00034     QIcon::setThemeName(\textcolor{stringliteral}{"mytheme"});
+00035 
+00036     engine.rootContext()->setContextProperty(\textcolor{stringliteral}{"peripheriqueLocal"}, \textcolor{keyword}{new} 
+      \hyperlink{class_peripherique_local}{PeripheriqueLocal}());
+00037     engine.load(QUrl(QStringLiteral(\textcolor{stringliteral}{"qrc:/Application.qml"})));
+00038     \textcolor{keywordflow}{if} (engine.rootObjects().isEmpty())
+00039         \textcolor{keywordflow}{return} -1;
+00040 
+00041     \textcolor{keywordflow}{return} app.exec();
+00042 \}
+\end{DoxyCode}

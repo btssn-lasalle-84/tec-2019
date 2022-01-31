@@ -1,0 +1,25 @@
+\hypertarget{trame_8h_source}{}\subsection{trame.\+h}
+\label{trame_8h_source}\index{trame.\+h@{trame.\+h}}
+
+\begin{DoxyCode}
+00001 \textcolor{preprocessor}{#ifndef TRAME\_H}
+00002 \textcolor{preprocessor}{#define TRAME\_H}
+00003 
+00004 \textcolor{preprocessor}{#include <QObject>}
+00005 
+\Hypertarget{trame_8h_source_l00030}\hyperlink{class_trame}{00030} \textcolor{keyword}{class }\hyperlink{class_trame}{Trame} : \textcolor{keyword}{public} QObject
+00031 \{
+00032     Q\_OBJECT
+00033 \textcolor{keyword}{public}:
+00034     \textcolor{keyword}{explicit} \hyperlink{class_trame_ae40bffc8a1e3f6ad9dec4710b673a57a}{Trame}(QObject *parent = \textcolor{keyword}{nullptr}); 
+00035 
+00036 signals:
+00037     \textcolor{keywordtype}{void} \hyperlink{class_trame_ae7f5191744273a6bb4347aa477bdfaff}{donneesTrottinette}(QString,QString,QString,QString); 
+00038     \textcolor{keywordtype}{void} \hyperlink{class_trame_a8286aea8fb78e2e148f3f0dc35e8b079}{risqueDeChute}(QString);
+00039 
+00040 \textcolor{keyword}{public} slots:
+00041     \textcolor{keywordtype}{void} \hyperlink{class_trame_af6397dc6452101d13d8cccd53205a937}{traiterTrame}(QString); 
+00042 \};
+00043 
+00044 \textcolor{preprocessor}{#endif // TRAME\_H}
+\end{DoxyCode}

@@ -1,0 +1,23 @@
+<RCC>
+    <qresource prefix="/">
+        <file>src/icons/index.theme</file>
+        <file>Application.qml</file>
+        <file>PageAccueil.qml</file>
+        <file>PageCarte.qml</file>
+        <file>src/icone-tec.png</file>
+        <file>src/icons/32x32/bluetoothon.png</file>
+        <file>src/icons/iconeDestination.png</file>
+        <file>src/icons/32x32/home.png</file>
+        <file>src/icons/32x32/map-location.png</file>
+        <file>src/icons/32x32/destination.png</file>
+        <file>src/icons/32x32/scooter.png</file>
+        <file>helper.js</file>
+        <file>src/icons/32x32/battery1.png</file>
+        <file>src/icons/32x32/battery2.png</file>
+        <file>src/icons/32x32/battery3.png</file>
+        <file>src/icons/32x32/battery4.png</file>
+        <file>src/icons/32x32/bluetoothoff.png</file>
+        <file>src/icons/32x32/rcd.png</file>
+        <file>src/icons/32x32/rcg.png</file>
+    </qresource>
+</RCC>

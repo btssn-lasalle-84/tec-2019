@@ -1,0 +1,323 @@
+\hypertarget{class_chronometre_utilisation}{}\subsection{Référence de la classe Chronometre\+Utilisation}
+\label{class_chronometre_utilisation}\index{Chronometre\+Utilisation@{Chronometre\+Utilisation}}
+
+
+Déclaration de la classe \hyperlink{class_chronometre_utilisation}{Chronometre\+Utilisation}.  
+
+
+
+
+{\ttfamily \#include $<$chronometreutilisation.\+h$>$}
+
+
+
+Graphe de collaboration de Chronometre\+Utilisation\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=211pt]{class_chronometre_utilisation__coll__graph}
+\end{center}
+\end{figure}
+\subsubsection*{Connecteurs publics}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_chronometre_utilisation_ac3f2fb837e9ba408d4dcaf488b289c64}{demarrer} (int top=\hyperlink{chronometreutilisation_8h_ad0750d12e2f5f404ec458d4066a53fa4}{P\+E\+R\+I\+O\+DE})
+\begin{DoxyCompactList}\small\item\em Slot lançant le timer du chrono. \end{DoxyCompactList}\item 
+void \hyperlink{class_chronometre_utilisation_a938c4c86a6b33eaf60af7be81ee7ec32}{arreter} ()
+\begin{DoxyCompactList}\small\item\em Slot arrêtant le timer du chrono. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsubsection*{Signaux}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_chronometre_utilisation_ae4e197f888e33feb23801d2edcf2c4a5}{chrono\+Updated} (Q\+String)
+\begin{DoxyCompactList}\small\item\em Signal contenant la variable contenant l\textquotesingle{}heure. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_chronometre_utilisation_a499bd70e5056ddb71df022848d1e345e}{Chronometre\+Utilisation} (Q\+Object $\ast$parent=nullptr)
+\begin{DoxyCompactList}\small\item\em Constructeur de la classe \hyperlink{class_chronometre_utilisation}{Chronometre\+Utilisation}. \end{DoxyCompactList}\item 
+long \hyperlink{class_chronometre_utilisation_a2c137076fcda83a14a5bad01b915196f}{get\+Minute} ()
+\begin{DoxyCompactList}\small\item\em Retourne les minutes du chrono. \end{DoxyCompactList}\item 
+long \hyperlink{class_chronometre_utilisation_a03c732560e07a2014129a7da8bb2307b}{get\+Heure} ()
+\begin{DoxyCompactList}\small\item\em Retourne l\textquotesingle{}heure du chrono. \end{DoxyCompactList}\item 
+long \hyperlink{class_chronometre_utilisation_a62dde8f710b8e015ba6124e8b44fe2da}{get\+Seconde} ()
+\begin{DoxyCompactList}\small\item\em Retourne les secondes du chrono. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsubsection*{Connecteurs privés}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_chronometre_utilisation_ab8dc7eb855ec9e24daefa4e185051d2e}{tic} ()
+\begin{DoxyCompactList}\small\item\em Slot qui incrémente le timer du chrono. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsubsection*{Fonctions membres privées}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_chronometre_utilisation_add760c3052342baec482fe0752a89b86}{update} ()
+\begin{DoxyCompactList}\small\item\em Met à jour la variable contenant l\textquotesingle{}heure. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsubsection*{Attributs privés}
+\begin{DoxyCompactItemize}
+\item 
+Q\+Timer $\ast$ \hyperlink{class_chronometre_utilisation_ae86620ca7d91c0d06c2e695493638bf2}{m\+\_\+timer}
+\begin{DoxyCompactList}\small\item\em Pointeur sur une classe Q\+Timer. \end{DoxyCompactList}\item 
+long \hyperlink{class_chronometre_utilisation_a7ef8b30ae4b6db56b9be832c847186ea}{m\+\_\+valeur}
+\begin{DoxyCompactList}\small\item\em Compteur de l\textquotesingle{}horloge. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsubsection{Description détaillée}
+\begin{DoxyAuthor}{Auteur}
+Somphon Sy
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+1 
+\end{DoxyVersion}
+
+
+\subsubsection{Documentation des constructeurs et destructeur}
+\mbox{\Hypertarget{class_chronometre_utilisation_a499bd70e5056ddb71df022848d1e345e}\label{class_chronometre_utilisation_a499bd70e5056ddb71df022848d1e345e}} 
+\index{Chronometre\+Utilisation@{Chronometre\+Utilisation}!Chronometre\+Utilisation@{Chronometre\+Utilisation}}
+\index{Chronometre\+Utilisation@{Chronometre\+Utilisation}!Chronometre\+Utilisation@{Chronometre\+Utilisation}}
+\paragraph{\texorpdfstring{Chronometre\+Utilisation()}{ChronometreUtilisation()}}
+{\footnotesize\ttfamily Chronometre\+Utilisation\+::\+Chronometre\+Utilisation (\begin{DoxyParamCaption}\item[{Q\+Object $\ast$}]{parent = {\ttfamily nullptr} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+\begin{DoxyParams}{Paramètres}
+{\em parent} & Q\+Object Adresse de l\textquotesingle{}objet Qt parent \\
+\hline
+\end{DoxyParams}
+
+
+Références \hyperlink{class_chronometre_utilisation_ae86620ca7d91c0d06c2e695493638bf2}{m\+\_\+timer}, \hyperlink{class_chronometre_utilisation_a7ef8b30ae4b6db56b9be832c847186ea}{m\+\_\+valeur}, et \hyperlink{class_chronometre_utilisation_ab8dc7eb855ec9e24daefa4e185051d2e}{tic()}.
+
+
+\begin{DoxyCode}
+00024                                                               : QObject(parent)
+00025 \{
+00026     \textcolor{comment}{// initialise la valeur du compteur de tic d'horloge}
+00027     \hyperlink{class_chronometre_utilisation_a7ef8b30ae4b6db56b9be832c847186ea}{m\_valeur} = 0;
+00028 
+00029     \textcolor{comment}{// instancie le timer (base de temps) de l'horloge}
+00030     \hyperlink{class_chronometre_utilisation_ae86620ca7d91c0d06c2e695493638bf2}{m\_timer} = \textcolor{keyword}{new} QTimer(\textcolor{keyword}{this});
+00031 
+00032     \textcolor{comment}{// connecte le signal d'expiration (timeout) d'une période (top d'horloge) au slot tic()}
+00033     connect(\hyperlink{class_chronometre_utilisation_ae86620ca7d91c0d06c2e695493638bf2}{m\_timer}, SIGNAL(timeout()), \textcolor{keyword}{this}, SLOT(\hyperlink{class_chronometre_utilisation_ab8dc7eb855ec9e24daefa4e185051d2e}{tic}()));
+00034 \}
+\end{DoxyCode}
+
+
+\subsubsection{Documentation des fonctions membres}
+\mbox{\Hypertarget{class_chronometre_utilisation_a938c4c86a6b33eaf60af7be81ee7ec32}\label{class_chronometre_utilisation_a938c4c86a6b33eaf60af7be81ee7ec32}} 
+\index{Chronometre\+Utilisation@{Chronometre\+Utilisation}!arreter@{arreter}}
+\index{arreter@{arreter}!Chronometre\+Utilisation@{Chronometre\+Utilisation}}
+\paragraph{\texorpdfstring{arreter}{arreter}}
+{\footnotesize\ttfamily void Chronometre\+Utilisation\+::arreter (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+
+
+Références \hyperlink{class_chronometre_utilisation_ae86620ca7d91c0d06c2e695493638bf2}{m\+\_\+timer}, \hyperlink{class_chronometre_utilisation_a7ef8b30ae4b6db56b9be832c847186ea}{m\+\_\+valeur}, et \hyperlink{class_chronometre_utilisation_add760c3052342baec482fe0752a89b86}{update()}.
+
+
+\begin{DoxyCode}
+00139 \{
+00140     \hyperlink{class_chronometre_utilisation_a7ef8b30ae4b6db56b9be832c847186ea}{m\_valeur} = 0 ;
+00141     \hyperlink{class_chronometre_utilisation_ae86620ca7d91c0d06c2e695493638bf2}{m\_timer}->stop();
+00142     \hyperlink{class_chronometre_utilisation_add760c3052342baec482fe0752a89b86}{update}();
+00143     qDebug() << \textcolor{stringliteral}{"ChronometreUtilisation::arreter()"};
+00144 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_chronometre_utilisation_ae4e197f888e33feb23801d2edcf2c4a5}\label{class_chronometre_utilisation_ae4e197f888e33feb23801d2edcf2c4a5}} 
+\index{Chronometre\+Utilisation@{Chronometre\+Utilisation}!chrono\+Updated@{chrono\+Updated}}
+\index{chrono\+Updated@{chrono\+Updated}!Chronometre\+Utilisation@{Chronometre\+Utilisation}}
+\paragraph{\texorpdfstring{chrono\+Updated}{chronoUpdated}}
+{\footnotesize\ttfamily void Chronometre\+Utilisation\+::chrono\+Updated (\begin{DoxyParamCaption}\item[{Q\+String}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+
+
+Référencé par \hyperlink{class_chronometre_utilisation_add760c3052342baec482fe0752a89b86}{update()}.
+
+\mbox{\Hypertarget{class_chronometre_utilisation_ac3f2fb837e9ba408d4dcaf488b289c64}\label{class_chronometre_utilisation_ac3f2fb837e9ba408d4dcaf488b289c64}} 
+\index{Chronometre\+Utilisation@{Chronometre\+Utilisation}!demarrer@{demarrer}}
+\index{demarrer@{demarrer}!Chronometre\+Utilisation@{Chronometre\+Utilisation}}
+\paragraph{\texorpdfstring{demarrer}{demarrer}}
+{\footnotesize\ttfamily Chronometre\+Utilisation\+::demarrer (\begin{DoxyParamCaption}\item[{int}]{top = {\ttfamily \hyperlink{chronometreutilisation_8h_ad0750d12e2f5f404ec458d4066a53fa4}{P\+E\+R\+I\+O\+DE}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+Arrête le chronomètre.
+
+Démarre le chronomètre. 
+
+Références \hyperlink{class_chronometre_utilisation_ae86620ca7d91c0d06c2e695493638bf2}{m\+\_\+timer}.
+
+
+\begin{DoxyCode}
+00128 \{
+00129     qDebug() << \textcolor{stringliteral}{"ChronometreUtilisation::demarrer()"};
+00130     \hyperlink{class_chronometre_utilisation_ae86620ca7d91c0d06c2e695493638bf2}{m\_timer}->start(top);
+00131 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_chronometre_utilisation_a03c732560e07a2014129a7da8bb2307b}\label{class_chronometre_utilisation_a03c732560e07a2014129a7da8bb2307b}} 
+\index{Chronometre\+Utilisation@{Chronometre\+Utilisation}!get\+Heure@{get\+Heure}}
+\index{get\+Heure@{get\+Heure}!Chronometre\+Utilisation@{Chronometre\+Utilisation}}
+\paragraph{\texorpdfstring{get\+Heure()}{getHeure()}}
+{\footnotesize\ttfamily long Chronometre\+Utilisation\+::get\+Heure (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Accesseur des heures du chrono.
+
+\begin{DoxyReturn}{Renvoie}
+long heure du chronomètre 
+\end{DoxyReturn}
+
+
+Références \hyperlink{class_chronometre_utilisation_a7ef8b30ae4b6db56b9be832c847186ea}{m\+\_\+valeur}.
+
+
+
+Référencé par \hyperlink{class_chronometre_utilisation_add760c3052342baec482fe0752a89b86}{update()}.
+
+
+\begin{DoxyCode}
+00058 \{
+00059     \textcolor{keywordtype}{long} heure = \hyperlink{class_chronometre_utilisation_a7ef8b30ae4b6db56b9be832c847186ea}{m\_valeur}/36000 ;
+00060     \textcolor{keywordflow}{if} (heure >= 24)
+00061     \{
+00062         heure -= 24;
+00063         \textcolor{keywordflow}{return} heure;
+00064     \}
+00065     \textcolor{keywordflow}{else}
+00066     \textcolor{keywordflow}{return} heure;
+00067 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_chronometre_utilisation_a2c137076fcda83a14a5bad01b915196f}\label{class_chronometre_utilisation_a2c137076fcda83a14a5bad01b915196f}} 
+\index{Chronometre\+Utilisation@{Chronometre\+Utilisation}!get\+Minute@{get\+Minute}}
+\index{get\+Minute@{get\+Minute}!Chronometre\+Utilisation@{Chronometre\+Utilisation}}
+\paragraph{\texorpdfstring{get\+Minute()}{getMinute()}}
+{\footnotesize\ttfamily long Chronometre\+Utilisation\+::get\+Minute (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Accesseur des minutes du chrono.
+
+\begin{DoxyReturn}{Renvoie}
+long minute du chronomètre 
+\end{DoxyReturn}
+
+
+Références \hyperlink{class_chronometre_utilisation_a7ef8b30ae4b6db56b9be832c847186ea}{m\+\_\+valeur}.
+
+
+
+Référencé par \hyperlink{class_chronometre_utilisation_add760c3052342baec482fe0752a89b86}{update()}.
+
+
+\begin{DoxyCode}
+00045 \{
+00046     \textcolor{keywordflow}{return} (\hyperlink{class_chronometre_utilisation_a7ef8b30ae4b6db56b9be832c847186ea}{m\_valeur}%36000)/600;
+00047 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_chronometre_utilisation_a62dde8f710b8e015ba6124e8b44fe2da}\label{class_chronometre_utilisation_a62dde8f710b8e015ba6124e8b44fe2da}} 
+\index{Chronometre\+Utilisation@{Chronometre\+Utilisation}!get\+Seconde@{get\+Seconde}}
+\index{get\+Seconde@{get\+Seconde}!Chronometre\+Utilisation@{Chronometre\+Utilisation}}
+\paragraph{\texorpdfstring{get\+Seconde()}{getSeconde()}}
+{\footnotesize\ttfamily long Chronometre\+Utilisation\+::get\+Seconde (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Accesseur des secondes du chrono.
+
+\begin{DoxyReturn}{Renvoie}
+long secondes du chronomètre 
+\end{DoxyReturn}
+
+
+Références \hyperlink{class_chronometre_utilisation_a7ef8b30ae4b6db56b9be832c847186ea}{m\+\_\+valeur}.
+
+
+
+Référencé par \hyperlink{class_chronometre_utilisation_add760c3052342baec482fe0752a89b86}{update()}.
+
+
+\begin{DoxyCode}
+00077 \{
+00078      \textcolor{keywordflow}{return} ((\hyperlink{class_chronometre_utilisation_a7ef8b30ae4b6db56b9be832c847186ea}{m\_valeur}/10)%60);
+00079 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_chronometre_utilisation_ab8dc7eb855ec9e24daefa4e185051d2e}\label{class_chronometre_utilisation_ab8dc7eb855ec9e24daefa4e185051d2e}} 
+\index{Chronometre\+Utilisation@{Chronometre\+Utilisation}!tic@{tic}}
+\index{tic@{tic}!Chronometre\+Utilisation@{Chronometre\+Utilisation}}
+\paragraph{\texorpdfstring{tic}{tic}}
+{\footnotesize\ttfamily void Chronometre\+Utilisation\+::tic (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+Incrémente la variable contenant le temps du chronomètre. 
+
+Références \hyperlink{class_chronometre_utilisation_a7ef8b30ae4b6db56b9be832c847186ea}{m\+\_\+valeur}, et \hyperlink{class_chronometre_utilisation_add760c3052342baec482fe0752a89b86}{update()}.
+
+
+
+Référencé par \hyperlink{class_chronometre_utilisation_a499bd70e5056ddb71df022848d1e345e}{Chronometre\+Utilisation()}.
+
+
+\begin{DoxyCode}
+00115 \{
+00116     \textcolor{comment}{// incrémente le compteur de top d'horloge}
+00117     \hyperlink{class_chronometre_utilisation_a7ef8b30ae4b6db56b9be832c847186ea}{m\_valeur}++;
+00118     \textcolor{comment}{// demande la mise à jour l'affichage de l'horloge}
+00119     \hyperlink{class_chronometre_utilisation_add760c3052342baec482fe0752a89b86}{update}();
+00120 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_chronometre_utilisation_add760c3052342baec482fe0752a89b86}\label{class_chronometre_utilisation_add760c3052342baec482fe0752a89b86}} 
+\index{Chronometre\+Utilisation@{Chronometre\+Utilisation}!update@{update}}
+\index{update@{update}!Chronometre\+Utilisation@{Chronometre\+Utilisation}}
+\paragraph{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void Chronometre\+Utilisation\+::update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Met à jour la variable contenant la durée du temps d\textquotesingle{}utilisation. 
+
+Références \hyperlink{class_chronometre_utilisation_ae4e197f888e33feb23801d2edcf2c4a5}{chrono\+Updated()}, \hyperlink{class_chronometre_utilisation_a03c732560e07a2014129a7da8bb2307b}{get\+Heure()}, \hyperlink{class_chronometre_utilisation_a2c137076fcda83a14a5bad01b915196f}{get\+Minute()}, et \hyperlink{class_chronometre_utilisation_a62dde8f710b8e015ba6124e8b44fe2da}{get\+Seconde()}.
+
+
+
+Référencé par \hyperlink{class_chronometre_utilisation_a938c4c86a6b33eaf60af7be81ee7ec32}{arreter()}, et \hyperlink{class_chronometre_utilisation_ab8dc7eb855ec9e24daefa4e185051d2e}{tic()}.
+
+
+\begin{DoxyCode}
+00088 \{
+00089    QString heure, minute , seconde , msec;
+00090 
+00091    \textcolor{comment}{// met à jour l'affichage de l'horloge}
+00092    \textcolor{keywordflow}{if} (\hyperlink{class_chronometre_utilisation_a03c732560e07a2014129a7da8bb2307b}{getHeure}() < 10)
+00093       heure = \textcolor{stringliteral}{"0"} + QString::number(\hyperlink{class_chronometre_utilisation_a03c732560e07a2014129a7da8bb2307b}{getHeure}());
+00094    \textcolor{keywordflow}{else} heure = QString::number(\hyperlink{class_chronometre_utilisation_a03c732560e07a2014129a7da8bb2307b}{getHeure}());
+00095    \textcolor{keywordflow}{if} (\hyperlink{class_chronometre_utilisation_a2c137076fcda83a14a5bad01b915196f}{getMinute}() < 10)
+00096       minute = \textcolor{stringliteral}{"0"} + QString::number(\hyperlink{class_chronometre_utilisation_a2c137076fcda83a14a5bad01b915196f}{getMinute}());
+00097    \textcolor{keywordflow}{else} minute = QString::number(\hyperlink{class_chronometre_utilisation_a2c137076fcda83a14a5bad01b915196f}{getMinute}());
+00098    \textcolor{keywordflow}{if} (\hyperlink{class_chronometre_utilisation_a62dde8f710b8e015ba6124e8b44fe2da}{getSeconde}() < 10 )
+00099        seconde = \textcolor{stringliteral}{"0"} + QString::number(\hyperlink{class_chronometre_utilisation_a62dde8f710b8e015ba6124e8b44fe2da}{getSeconde}());
+00100    \textcolor{keywordflow}{else} seconde = QString::number(\hyperlink{class_chronometre_utilisation_a62dde8f710b8e015ba6124e8b44fe2da}{getSeconde}());
+00101    \textcolor{keywordflow}{if} (\hyperlink{class_chronometre_utilisation_a62dde8f710b8e015ba6124e8b44fe2da}{getSeconde}() < 10 )
+00102        seconde = \textcolor{stringliteral}{"0"} + QString::number(\hyperlink{class_chronometre_utilisation_a62dde8f710b8e015ba6124e8b44fe2da}{getSeconde}());
+00103    \textcolor{keywordflow}{else} seconde = QString::number(\hyperlink{class_chronometre_utilisation_a62dde8f710b8e015ba6124e8b44fe2da}{getSeconde}());
+00104 
+00105    QString text = heure + \textcolor{stringliteral}{":"} + minute + \textcolor{stringliteral}{":"} + seconde  ;
+00106    emit \hyperlink{class_chronometre_utilisation_ae4e197f888e33feb23801d2edcf2c4a5}{chronoUpdated}(text);
+00107 \}
+\end{DoxyCode}
+
+
+\subsubsection{Documentation des données membres}
+\mbox{\Hypertarget{class_chronometre_utilisation_ae86620ca7d91c0d06c2e695493638bf2}\label{class_chronometre_utilisation_ae86620ca7d91c0d06c2e695493638bf2}} 
+\index{Chronometre\+Utilisation@{Chronometre\+Utilisation}!m\+\_\+timer@{m\+\_\+timer}}
+\index{m\+\_\+timer@{m\+\_\+timer}!Chronometre\+Utilisation@{Chronometre\+Utilisation}}
+\paragraph{\texorpdfstring{m\+\_\+timer}{m\_timer}}
+{\footnotesize\ttfamily Q\+Timer$\ast$ Chronometre\+Utilisation\+::m\+\_\+timer\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_chronometre_utilisation_a938c4c86a6b33eaf60af7be81ee7ec32}{arreter()}, \hyperlink{class_chronometre_utilisation_a499bd70e5056ddb71df022848d1e345e}{Chronometre\+Utilisation()}, et \hyperlink{class_chronometre_utilisation_ac3f2fb837e9ba408d4dcaf488b289c64}{demarrer()}.
+
+\mbox{\Hypertarget{class_chronometre_utilisation_a7ef8b30ae4b6db56b9be832c847186ea}\label{class_chronometre_utilisation_a7ef8b30ae4b6db56b9be832c847186ea}} 
+\index{Chronometre\+Utilisation@{Chronometre\+Utilisation}!m\+\_\+valeur@{m\+\_\+valeur}}
+\index{m\+\_\+valeur@{m\+\_\+valeur}!Chronometre\+Utilisation@{Chronometre\+Utilisation}}
+\paragraph{\texorpdfstring{m\+\_\+valeur}{m\_valeur}}
+{\footnotesize\ttfamily long Chronometre\+Utilisation\+::m\+\_\+valeur\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_chronometre_utilisation_a938c4c86a6b33eaf60af7be81ee7ec32}{arreter()}, \hyperlink{class_chronometre_utilisation_a499bd70e5056ddb71df022848d1e345e}{Chronometre\+Utilisation()}, \hyperlink{class_chronometre_utilisation_a03c732560e07a2014129a7da8bb2307b}{get\+Heure()}, \hyperlink{class_chronometre_utilisation_a2c137076fcda83a14a5bad01b915196f}{get\+Minute()}, \hyperlink{class_chronometre_utilisation_a62dde8f710b8e015ba6124e8b44fe2da}{get\+Seconde()}, et \hyperlink{class_chronometre_utilisation_ab8dc7eb855ec9e24daefa4e185051d2e}{tic()}.
+
+
+
+La documentation de cette classe a été générée à partir des fichiers suivants \+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{chronometreutilisation_8h}{chronometreutilisation.\+h}\item 
+\hyperlink{chronometreutilisation_8cpp}{chronometreutilisation.\+cpp}\end{DoxyCompactItemize}
